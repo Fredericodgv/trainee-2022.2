@@ -16,7 +16,7 @@
 
 * [Frederico Dôndici Gama Vieira](https://github.com/Fredericodgv).
 
-#### Links Úteis
+#### Links Úteis:
 
 * [Trello](https://trello.com/invite/b/xaJykNcK/cf7834b862790b0f9ca9a69674baf1c4/clarim-diario)
 
