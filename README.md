@@ -16,9 +16,11 @@
 
 * [Frederico Dôndici Gama Vieira](https://github.com/Fredericodgv).
 
-** [Trello](https://trello.com/invite/b/xaJykNcK/cf7834b862790b0f9ca9a69674baf1c4/clarim-diario)
+#### Links Úteis
 
-** [Drive com ID Visual](https://drive.google.com/drive/folders/1UYYd7b9ObPhvJ7TS7LcQaQ_OYhJBeO84?usp=sharing)
+* [Trello](https://trello.com/invite/b/xaJykNcK/cf7834b862790b0f9ca9a69674baf1c4/clarim-diario)
+
+* [Drive com ID Visual](https://drive.google.com/drive/folders/1UYYd7b9ObPhvJ7TS7LcQaQ_OYhJBeO84?usp=sharing)
 
 
 
