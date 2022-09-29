@@ -2,15 +2,15 @@
 
 # **Clarim Diario**
 
-## **Projeto Trainee, Code Jr, Grupo ?, 2022.2**
+## **Projeto Trainee, Code Jr, Grupo 1, 2022.2**
 
 #### Desenvolvedores:
 
-*
-*
-*
-*
-*
+* Emmanuel Gomes Nassif
+* Felipe Souza Magalhães Sant'Anna
+* Giovanni Almeida Dutra
+* Rodrigo Campos Figueredo
+
 
 #### Scrum Master:
 
