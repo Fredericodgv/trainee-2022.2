@@ -1,0 +1,52 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+
+.logo{
+    justify-content: center;
+}
+
+.logo img{
+    width:90%
+}
+
+
+.identidade-lista-de-posts{
+    width: 100%;
+    height: 1000px;    
+
+    background-color: black;
+}
+
+.aux_cards{
+    display: inline-block;
+    background-color: brown;
+    margin: 5%;
+    margin-bottom: -40px;
+    width: 50%;
+    justify-content: center;
+}
+
+.aux_card-body h5{
+    font-size: 40px;
+}
+
+.aux_card-body p{
+    font-size: 10px;
+}
+
+.aux_cards img{
+    width: 20%;
+}
+
+
+.aux_card-body{
+    display: inline-block;
+    background-color: #d99c2b;
+    text-align: left;
+    vertical-align: top; 
+    width: 80%;
+}
