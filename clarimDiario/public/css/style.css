@@ -5,47 +5,129 @@ html, body{
 }
 
 
+
 .logo{
     justify-content: center;
-}
-
-.logo img{
-    width:90%
-}
-
-
-.identidade-lista-de-posts{
-    width: 100%;
-    height: 1000px;    
-
     background-color: black;
 }
 
+.logo img{
+    width:100%;
+}
+
+
+
+.aux_nav{
+    background-color: black;
+    padding-bottom: 20px;
+}
+.aux_container{
+    margin-left: 62.5%;
+}
+
+.aux_form{
+    height: 50px;
+    width: 400px;
+    font-size: 18px;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 20px;
+}
+
+.aux_btn_nav{
+    height: 50px;
+    border-radius: 0px 20px 20px 0px ;
+    font-size: 20px;
+    padding-right: 18px;
+    padding-left: 10px;
+    color: black;
+    background-color: #d99c2b;
+    border: none;
+}
+
+
+
+
+.board{
+    background-color: #d91e1e;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    border-radius: 20px;
+}
+
+.identidade-lista-de-posts{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+
+
+
 .aux_cards{
     display: inline-block;
-    background-color: brown;
-    margin: 5%;
-    margin-bottom: -40px;
-    width: 50%;
-    justify-content: center;
+    background-color: #d91e1e;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    margin-left: 8%;
+    margin-right: 12%;
+    width: 80%;
+    height: auto;
+    border: solid black 3px;
+}
+
+.aux_cards a{
+    text-decoration: none;
 }
 
 .aux_card-body h5{
-    font-size: 40px;
+    font-size: 32px;
+    width: auto;
+    height: 70px;   
+    background-color: #d99c2b;
+    border:solid black 3px;
+    border-top: none;
 }
 
 .aux_card-body p{
-    font-size: 10px;
+    width: auto;
+    height: 130px;
+    font-size: 20px;
+    line-height: 26px;
+    border: solid black 3px;
+    border-bottom: none;
+    background-color: white;
 }
 
 .aux_cards img{
     width: 20%;
+    height: 201px;
+    border: solid black 3px;
+}
+
+
+.aux_btn{
+    width: 110px;
+    height: 40px;
+    margin-top: -60px;
+    margin-left: 810px;
+    font-size: 16px;
+    border-radius: 8px;
+    line-height: 38px;
+    color: black;
+    background-color: #d99c2b;
+    border: none;
+    
+}
+
+.aux_card-body a:hover{
+    color: black;
+    background-color: #d99c2b;
 }
 
 
 .aux_card-body{
     display: inline-block;
-    background-color: #d99c2b;
     text-align: left;
     vertical-align: top; 
     width: 80%;
