@@ -67,9 +67,6 @@ html, body{
     background-color: black;
 }
 
-
-
-
 .aux_cards{
     display: inline-block;
     background-color: #d91e1e;
@@ -108,7 +105,11 @@ html, body{
     background-color: white;
 }
 
-.aux_cards img{
+.img-post{
+    display: inline;
+}
+
+.img-post img{
     width: 20%;
     height: 201px;
     border: solid black 3px;
@@ -146,4 +147,73 @@ html, body{
 .container{
     display: flex;
     justify-content: flex-end;
+}
+
+@media (max-width: 1150px) {
+
+    .logo{
+        padding-top: 30px;
+    }
+
+    .aux_cards{
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 92%;
+        height: auto;
+        text-align: right;
+    }
+
+    .aux_cards img{
+        display: inline-block;
+    }
+
+    .aux_card-body{
+        width: 60%;
+        display: inline-block;
+        background-color: green;
+    }
+    
+    .aux_card-body h5{
+        display: inline-block;
+        font-size: 18px;
+        padding-top: 2px;
+        width: 100%;
+    }
+
+    .aux_card-body p{
+        display: inline-block;
+        font-size: 14px;
+        padding-top: 2px;
+        width: 100%;
+
+    }
+
+    .aux_btn{
+        font-size: 12px;
+        width: 70px;
+        line-height: 28px;
+        height: 30px;
+        margin-top: -36px;
+    }
+
+    .aux_container{
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 20px;
+    }
+
+    .aux_form{
+        width: 100%;
+    }
+
+    .img-post{
+        background-color: yellow;
+        width: 40%;
+        display: inline-block;
+    }
+
+    .img-post img{
+        width: 100%;
+    }
+    
 }
