@@ -1,0 +1,22 @@
+.container-fluid{
+    background-color: #d99b2c;
+}
+
+.offcanvas-header{
+    background-color: #d99b2c;
+}
+
+.offcanvas-body{
+    background-color: #000000;
+}
+
+.nav-link button{
+    background-color: #d99b2c;
+    font-weight: bold;
+}
+
+.col-auto button{
+    background-color: #d99b2c;
+    color: white;
+    font-weight: bold;
+}
