@@ -1,0 +1,125 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.login-block{
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 550px;
+    margin-left: 50%;
+    background-color: #d91e1e;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    box-shadow: 0px 10px 40px -12px rgb(66, 64, 64);
+
+
+}.login-block h2{
+    font-size: 32px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.login-block input{
+    height: 40px;
+    width: 100%;
+    color: #000000;
+    background-color: #fff;
+    border: 0.9px solid #d99c2b;
+    border-radius: 10px 20px 30px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login-block input:hover{
+    background-color: rgb(172, 171, 171);
+}
+
+.caixa_de_entrada{
+    margin-bottom: 25px;
+}
+
+.login-block button{
+    height: 45px;
+    width: 100%;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 18px;
+}
+
+.login-block button:hover{
+    background-color: #d99c2b;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+}
+
+.login-block input:hover{
+    background-color: rgb(233,233,233);
+}
+
+.suporte{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.suporte input{
+    width: 15px;
+    height: 15px;
+}
+
+.relembrar{
+    display: flex;
+    align-items: center;
+}
+
+.relembrar span{
+    margin-right: 5px;
+    height: 25px;
+    accent-color: #d99c2b;
+}
+
+.ajuda a{
+    text-decoration: none;
+    color: white;
+}
+
+.ajuda a:hover{
+    text-decoration: underline;
+}
+
+.novo_usuario{
+    color:#fff;
+    font-size: 14px;
+}
+
+.novo_usuario a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.novo_usuario a:hover{
+    text-decoration: underline;
+}
