@@ -78,7 +78,6 @@ body{
 }
 
 .suporte{
-    display: flex;
     color: #fff;
     justify-content: space-between;
     font-size: 12px;
@@ -91,7 +90,6 @@ body{
 }
 
 .relembrar{
-    display: flex;
     align-items: center;
 }
 
