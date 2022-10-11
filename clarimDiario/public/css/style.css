@@ -14,6 +14,29 @@ html, body{
     width: 100%;
 }
 
+.add_btn{
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+    background-color: black;
+}
+
+.add_btn button{
+    background-color: blue;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.add_btn a{
+    width: 200px;
+    text-decoration: none;
+    color: white;
+}
+
+
 .identidade-lista-de-usuarios{
     background-color: black;
     width: 100%;

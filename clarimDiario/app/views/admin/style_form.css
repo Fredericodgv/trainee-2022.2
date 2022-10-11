@@ -1,0 +1,74 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    margin-left: 10px;
+}
+
+body h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+body p{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.nome{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+.email{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+.senha{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+.btns{
+    width: 16%;
+    text-align: right;
+    margin-top: 12px;
+    font-size: 20px;
+
+}
+
+.btn_close{
+    background-color: #9c9b9b;
+    width: 70px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn_save{
+    background-color:#d99c2b;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn_add{
+    background-color:#d99c2b;
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn_delete{
+    background-color: red;
+    width: 70px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
