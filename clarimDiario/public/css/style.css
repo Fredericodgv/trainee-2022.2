@@ -1,0 +1,103 @@
+body{
+    background-color: black;
+}
+
+.cabecalho{
+    margin-top: -40px;
+    justify-content: center;
+}
+
+.cabecalho img{
+    width:100%;
+}
+
+.aux_nav{
+    margin-top: -30px;
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+.aux_container{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+
+.aux_form{
+    height: 50px;
+    width: 400px;
+    font-size: 18px;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 20px;
+
+}
+
+.aux_btn_nav{
+    height: 50px;
+    border-radius: 0px 20px 20px 0px ;
+    font-size: 20px;
+    padding-right: 18px;
+    padding-left: 10px;
+    color: black;
+    background-color: #d99c2b;
+    border: none;
+}
+
+.board{
+    background-color: #d91e1e;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    border-radius: 20px;
+}
+
+.identidade-lista-de-posts{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.aux_cards{
+    display: inline-block;
+    background-color: #d91e1e;
+    margin-top: auto;
+    margin-bottom: 2%;
+    margin-left: 8%;
+    margin-right: 12%;
+    width: 80%;
+    height: auto;
+}
+
+.aux_card-title{
+    text-align: center;
+    font-size:x-large;
+}
+
+.card-text{
+    text-align: justify;
+
+}
+
+.foto-post img{
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+}
+
+.foto-autor{
+    display: flex;
+    font-size: large;
+    margin-top: 2rem;
+}
+
+.foto-autor img{
+    max-width:60px;
+    max-height:60px;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+    float: right;
+}
+
