@@ -32,8 +32,8 @@ main {
 
 .principal {
     background-color: #d91e1e;
-    width: auto;
-    height: 650px;
+    width: 100%;
+    height: 100%;
     padding: 3rem;
     border-radius: 25px;
 }
@@ -43,6 +43,8 @@ main {
     background-color: white;
     border: 11px solid #000000;
     border-radius: 20px;
+    width: 50%;
+    text-align: center;
 }
 
 .manchete h1{
@@ -50,8 +52,7 @@ main {
     color: #ff0000;
     font-size: 68px;
     font-weight: 700;
-    text-align: center;
-    max-width: 100%;
+    width: 100%;
     max-height: auto;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -68,16 +69,16 @@ main {
 }
 
 .manchete p{
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 22px;
-    max-width: 700px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 23.5px;
+    width: 100%;
     color: black;
+    text-align: left;
 }
 
 .news {
-    max-width: 700px;
+    max-width: 50%;
     max-height: 500px;
     background-color: #d91e1e;
     margin-left: 4rem;
@@ -95,9 +96,9 @@ main {
 
 .news-cards {
     background-color: #d91e1e;
-    width: 50%;
+    width: 80%;
     display: block;
-    height: auto;
+    height: 70%;
     border-radius: 50px;
     border: 5px solid black;
     margin-top: 15rem;
@@ -191,18 +192,6 @@ main {
 
 @media screen and (max-width: 1600px) {
    
-    .manchete h1 {
-        font-size: 38px;
-    }
-
-    .manchete h1 {
-        -webkit-text-stroke-width: 2.5px;
-    }
-
-    .manchete h1 span {
-        -webkit-text-stroke-width: 2.5px;
-    }
-
     .img-cards img {
         display: none;
     }
@@ -215,9 +204,16 @@ main {
         flex-direction: column;
     }
 
-    .logo img {
-        align-self: center;
-        width: 100%;
+    .manchete h1 {
+        font-size: 42px;
+    }
+
+    .manchete h1 {
+        -webkit-text-stroke-width: 2.5px;
+    }
+
+    .manchete h1 span {
+        -webkit-text-stroke-width: 2.5px;
     }
     
     .principal {
@@ -228,6 +224,10 @@ main {
     .manchete {
         width: 100%;
         margin-right: 1.75rem;
+    }
+
+    .manchete p {
+        font-size: 24px;
     }
     
     .news {
@@ -250,27 +250,72 @@ main {
         font-size: 20px;
     }
 
-    .aux-cards img {
-        width: 220px;
+}
+
+@media screen and (max-width: 500px) {
+    .manchete h1 {
+        font-size: 25px;
+        padding: 0px;
     }
 
-    .cards {
-        align-self: center;
-        width: 100%;
+    .manchete h1 {
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .manchete h1 span {
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .news-cards h1 span {
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .manchete p {
+        font-size: 15px;
+    }
+
+    .news-cards h1 {
+        font-size: 26px;
+    }
+
+    .aux-struct h5 {
+        font-size: 20px;
+    }
+
+    .aux-struct p {
+        font-size: 15px;
+    }
+
+    .aux-cards img {
+        width: 80%;
     }
 
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 300px) {
     .manchete h1 {
-        font-size: 34px;
+        font-size: 15px;
+    }
+
+    .manchete h1 {
+        -webkit-text-stroke-width: 0.8px;
+    }
+
+    .manchete h1 span {
+        -webkit-text-stroke-width: 0.8px;
     }
 
     .manchete p {
-        font-size: 17px;
-        padding-right: 5px;
-        padding-left: 5px;
+        font-size: 11px;
+        padding: 0.5px;
+    }
+
+    .aux-struct h5 {
+        font-size: 15px;
+    }
+
+    .aux-struct p {
+        font-size: 12px;
     }
 }
 
