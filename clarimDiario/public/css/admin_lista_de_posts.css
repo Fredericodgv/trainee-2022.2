@@ -1,0 +1,17 @@
+html, body {
+    background-color: black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+}
+
+.logo {
+    justify-content: center;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+}
+
+.logo img {
+    width: 85%;
+}
+

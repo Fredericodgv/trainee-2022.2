@@ -1,0 +1,268 @@
+html, body {
+    color: black;
+    margin-top: 1rem;
+    background-color: lightgray;
+}
+    
+
+
+
+/* Inicio do Forms-Add */
+
+
+
+
+.container-add {
+    border: 10px;
+    max-width: 28%;
+    margin: auto;
+    background-color: white; 
+    padding-bottom: 30px;
+}
+
+.container-add h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 15px;
+    margin-bottom: 1rem;
+    margin-left: 4%;
+}
+
+.titulo-input-add {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.texto-input-add {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.data-input-add {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.titulo-add {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.conteudo-add {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.data-add {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.aux-button-add {
+    background-color: black;
+    max-width: 90%;
+    margin-left: 4%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_close {
+    width: 30%;
+}
+
+.btn_add {
+    width: 35%;
+}
+
+
+
+
+/* Inicio do Forms-Edit */
+
+
+
+
+.container-edit {
+    border: 10px;
+    max-width: 28%;
+    margin: auto;
+    background-color: white; 
+    padding-bottom: 30px;
+}
+
+.container-edit h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 15px;
+    margin-bottom: 1rem;
+    margin-left: 4%;
+}
+
+.titulo-input-edit {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.texto-input-edit {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.data-input-edit {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.titulo-edit {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.conteudo-edit {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.data-edit {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.aux-button-edit {
+    background-color: black;
+    max-width: 90%;
+    margin-left: 4%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+/* Inicio do Forms-View */
+
+
+
+
+.container-view {
+    border: 10px;
+    max-width: 28%;
+    margin: auto;
+    background-color: white; 
+    padding-bottom: 30px;
+}
+
+.container-view h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 15px;
+    margin-bottom: 1rem;
+    margin-left: 4%;
+}
+
+.titulo-input-view {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.texto-input-view {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.data-input-view {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.titulo-view {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.conteudo-view {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.data-view {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.aux-button-view {
+    background-color: black;
+    max-width: 90%;
+    margin-left: 4%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_close {
+    width: 30%;
+}
+
+.btn_add {
+    width: 35%;
+}
+
+
+
+
+/* Inicio do Forms-Delete */
+
+
+
+
+.container-delete {
+    border: 10px;
+    max-width: 28%;
+    margin: auto;
+    background-color: white; 
+    padding-bottom: 30px;
+}
+
+.container-delete h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 15px;
+    margin-bottom: 1rem;
+    margin-left: 4%;
+}
+
+.conteudo-delete {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    font-size: 19px;
+    margin-left: 4%;
+}
+
+.aux-button-delete {
+    background-color: black;
+    max-width: 90%;
+    margin-left: 4%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: flex-end;
+}
