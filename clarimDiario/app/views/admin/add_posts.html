@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
 
     <head>
         <meta charset="utf-8">
@@ -13,28 +13,49 @@
     </head>
 
     <body>
-        
-        <main class="principal">
-            <div class="container-add">
-                <h1>Adicionar Publicação</h1>
-                <p class="titulo-add">Título da publicação</p>
-                <input class="titulo-input-add" type="text" placeholder="Novo Título">
-                <p class="conteudo-add">Conteúdo da publicação</p>
-                <input class="texto-input-add" type="text" placeholder="Lorem">
-                <p class="data-add">Data</p>
-                <input class="data-input-add" type="date" placeholder="dd/mm/yy">
-            
-                <div class="btns aux-button-add">
-                    <button class="btn_close">
-                        Cancelar
-                    </button>
-                    <button class="btn_add">
-                        Adicionar Post
-                    </button>
+        <div class="container">
+            <div class="form">
+                <form action="#">
+            <div class="form-header">
+                    <h1>Adicionar Publicação</h1>
                 </div>
-            </div>
-        </main>
-   
-    </body>
+                    
+                <div class="input">
+                    
+                    <p class="title-add">Título da publicação</p>
+                    
+                    <div class="input-box">
+                        <input id="title" type="text" placeholder="Título" required>
+                    </div>    
+                    
+                    <p class="content-add">Conteúdo da publicação</p>
+                    
+                    <div class="input-box">
+                        <input id="content" type="text" placeholder="Lorem" required>
+                    </div>
+                    
+                    <p class="date-add">Data</p>
+                    
+                    <div class="input-box">
+                        <input id="date" type="date" required>
+                    </div>
+                </div>
+
+                <div class="aux-button">
+                
+                <div class="exit-button">
+                    <button>Sair</button>
+                </div>
+
+                <div class="add-button">
+                    <button>Adicionar</button>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
 
 </html>

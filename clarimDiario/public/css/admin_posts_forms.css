@@ -1,268 +1,215 @@
-html, body {
-    color: black;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbdbd75;
+}
+
+.container {
+    width: 40%;
+    height: 80vh;
+    display: flex;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 30px 30px 30px rgba(190, 104, 104, 0.815);
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+} 
+
+.input p {
+    font-size: 30px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 19px;
+    font-style: italic;
+    padding-left: 0.5rem;
+    color: gray;
+}
+
+.input-box input:hover {
+    background-color: #bdbdbd75;
+}
+
+.input-box input:focus-visible {
+    outline: 2px solid #d91e1e;
+}
+
+.input-box input::placeholder {
+    color: gray;
+}
+
+.exit-button {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.add-button {
+    width: 45%;
+}
+
+.exit-button button {
+    background-color: #d91e1e;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add-button button {
+    background-color: #0c0ce94d;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.aux-button {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
     margin-top: 1rem;
-    background-color: lightgray;
-}
-    
-
-
-
-/* Inicio do Forms-Add */
-
-
-
-
-.container-add {
-    border: 10px;
-    max-width: 28%;
-    margin: auto;
-    background-color: white; 
-    padding-bottom: 30px;
 }
 
-.container-add h1{
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 15px;
-    margin-bottom: 1rem;
-    margin-left: 4%;
+.exit-button button {
+    text-decoration: none;
+    font-size: 25px;
 }
 
-.titulo-input-add {
-    width: 90%;
-    margin-left: 4%;
+.add-button button {
+    text-decoration: none;
+    font-size: 25px;
 }
-
-.texto-input-add {
-    width: 90%;
-    margin-left: 4%;
-}
-
-.data-input-add {
-    width: 90%;
-    margin-left: 4%;
-}
-
-.titulo-add {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.conteudo-add {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.data-add {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.aux-button-add {
-    background-color: black;
-    max-width: 90%;
-    margin-left: 4%;
-    margin-top: 4%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.btn_close {
-    width: 30%;
-}
-
-.btn_add {
-    width: 35%;
-}
-
-
-
-
-/* Inicio do Forms-Edit */
-
-
-
-
-.container-edit {
-    border: 10px;
-    max-width: 28%;
-    margin: auto;
-    background-color: white; 
-    padding-bottom: 30px;
-}
-
-.container-edit h1{
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 15px;
-    margin-bottom: 1rem;
-    margin-left: 4%;
-}
-
-.titulo-input-edit {
-    width: 90%;
-    margin-left: 4%;
-}
-
-.texto-input-edit {
-    width: 90%;
-    margin-left: 4%;
-}
-
-.data-input-edit {
-    width: 90%;
-    margin-left: 4%;
-}
-
-.titulo-edit {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.conteudo-edit {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.data-edit {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.aux-button-edit {
-    background-color: black;
-    max-width: 90%;
-    margin-left: 4%;
-    margin-top: 4%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-
-
-/* Inicio do Forms-View */
-
-
-
-
-.container-view {
-    border: 10px;
-    max-width: 28%;
-    margin: auto;
-    background-color: white; 
-    padding-bottom: 30px;
-}
-
-.container-view h1{
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 15px;
-    margin-bottom: 1rem;
-    margin-left: 4%;
-}
-
-.titulo-input-view {
-    width: 90%;
-    margin-left: 4%;
-}
-
-.texto-input-view {
-    width: 90%;
-    margin-left: 4%;
-}
-
-.data-input-view {
-    width: 90%;
-    margin-left: 4%;
-}
-
-.titulo-view {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.conteudo-view {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.data-view {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
-}
-
-.aux-button-view {
-    background-color: black;
-    max-width: 90%;
-    margin-left: 4%;
-    margin-top: 4%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.btn_close {
-    width: 30%;
-}
-
-.btn_add {
-    width: 35%;
-}
-
-
-
 
 /* Inicio do Forms-Delete */
 
-
-
-
-.container-delete {
-    border: 10px;
-    max-width: 28%;
-    margin: auto;
-    background-color: white; 
-    padding-bottom: 30px;
+.delete-button {
+    margin-top: 2.5rem;
 }
 
-.container-delete h1{
-    font-size: 30px;
+.form-header-delete h1 {
+    font-size: 60px;
     font-weight: 700;
-    padding-top: 15px;
-    margin-bottom: 1rem;
-    margin-left: 4%;
 }
 
-.conteudo-delete {
-    padding-top: 15px;
-    margin-bottom: 2px;
-    font-size: 19px;
-    margin-left: 4%;
+.input-delete p{
+    font-size: 26px;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
 }
 
-.aux-button-delete {
-    background-color: black;
-    max-width: 90%;
-    margin-left: 4%;
-    margin-top: 4%;
-    display: flex;
-    justify-content: flex-end;
+/* Fim do Forms-Delete */
+
+/* Inicio do Forms-View */
+
+.form-header-view h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.input-view p {
+    font-size: 26px;
+    margin-top: 4.5rem;
+}
+
+.view-button {
+    margin-top: 2.5rem;
+}
+
+
+@media screen and (max-height: 920px) {
+    .form {
+        box-shadow: none;
+    }
+
+    .container {
+        width: 90%;
+        height: 96%;
+    }
+
+    .input p {
+        font-size: 26px;
+    }
+
+    .exit-button button {
+        text-decoration: none;
+        font-size: 24px;
+    }
+    
+    .add-button button {
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .form-header h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .form {
+        box-shadow: none;
+    }
+
+    .container {
+        width: 90%;
+        height: 96%;
+    }
+
+    .input p {
+        font-size: 20px;
+    }
+
+    .exit-button button {
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .add-button button {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .form-header h1 {
+        font-size: 35px;
+    }
 }

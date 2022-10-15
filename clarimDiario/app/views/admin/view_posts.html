@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
 
     <head>
         <meta charset="utf-8">
@@ -13,28 +13,38 @@
     </head>
 
     <body>
-        
-        <main class="principal">
-            <div class="container-view">
-                <h1>Visualizar Publicação</h1>
-                <p class="titulo-view">Título da publicação</p>
-                <input class="titulo-input-edit" type="text">
-                <p class="conteudo-view">Conteúdo da publicação</p>
-                <input class="texto-input-view" type="text" placeholder="Lorem">
-                <p class="data-view">Data</p>
-                <input class="data-input-view" type="date" placeholder="dd/mm/yy">
-            
-                <div class="btns aux-button-view">
-                    <button class="btn_close">
-                        Cancelar
-                    </button>
-                    <button class="btn_add">
-                        Pesquisar
-                    </button>
+        <div class="container-view">
+            <div class="form">
+                <form action="#">
+            <div class="form-header-view">
+                    <h1>Visualizar Publicação</h1>
                 </div>
-            </div>
-        </main>
-   
-    </body>
+                    
+                <div class="input-view">
+                    
+                    <p class="title-add">Qual publicação deseja visualizar?</p>
+                    
+                    <div class="input-box">
+                        <input id="title" type="text" placeholder="Título da publicação" required>
+                    </div>    
+                    
+                </div>
+
+                <div class="aux-button view-button">
+                
+                <div class="exit-button">
+                    <button>Sair</button>
+                </div>
+
+                <div class="add-button">
+                    <button>Pesquisar</button>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
 
 </html>
