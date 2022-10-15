@@ -16,7 +16,7 @@ body {
 
 .container {
     width: 40%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
 }
 
@@ -27,8 +27,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: white;
-    box-shadow: 30px 30px 30px rgba(190, 104, 104, 0.815);
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .form-header {
@@ -49,12 +48,13 @@ body {
 
 .input p {
     font-size: 30px;
+    margin-bottom: 0px;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    margin-bottom: 0rem;
 }
 
 .input-box input {
@@ -67,10 +67,11 @@ body {
     font-style: italic;
     padding-left: 0.5rem;
     color: gray;
+    width: 100%;
 }
 
 .input-box input:hover {
-    background-color: #bdbdbd75;
+    background-color: #c5c4c475;
 }
 
 .input-box input:focus-visible {
@@ -94,6 +95,7 @@ body {
     background-color: #d91e1e;
     border-radius: 5px;
     width: 100%;
+    cursor: pointer;
 }
 
 .add-button button {
@@ -122,19 +124,47 @@ body {
 
 /* Inicio do Forms-Delete */
 
-.delete-button {
-    margin-top: 2.5rem;
+.form-delete{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
 }
 
-.form-header-delete h1 {
-    font-size: 60px;
+.aux-button-delete {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exit-button-delete button {
+    background-color: #d91e1e;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.add-button-delete button {
+    background-color: #0c0ce94d;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 1rem;
+}
+
+.form-header-delete h1{
+    font-size: 65px;
     font-weight: 700;
 }
 
-.input-delete p{
-    font-size: 26px;
-    margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
+.input-delete p {
+    font-size: 34px;
+    margin-top: 3rem;
 }
 
 /* Fim do Forms-Delete */
@@ -155,21 +185,32 @@ body {
     margin-top: 2.5rem;
 }
 
+/* Fim do Forms-View */
 
-@media screen and (max-height: 920px) {
-    .form {
-        box-shadow: none;
+@media screen and (max-width: 900px) {
+
+    .form-delete{
+        width: 100%;
+        height: 90vh;
     }
-
+    
     .container {
-        width: 90%;
-        height: 96%;
+        width: 100%;
+        height: 100%;
     }
 
     .input p {
         font-size: 26px;
     }
 
+    .form-header h1 {
+        font-size: 40px;
+    }
+
+    .form-header {
+        margin-bottom: 10px;    
+    }
+    
     .exit-button button {
         text-decoration: none;
         font-size: 24px;
@@ -180,25 +221,53 @@ body {
         font-size: 24px;
     }
 
-    .form-header h1 {
-        font-size: 40px;
-    }
 }
 
-@media screen and (max-height: 700px) {
-    .form {
-        box-shadow: none;
-    }
+@media screen and (max-width: 1400px) {
 
     .container {
-        width: 90%;
-        height: 96%;
+        width: 100%;
+        height: 100%;
     }
 
+    .input p {
+        font-size: 30px;
+    }
+
+    .form-header h1 {
+        font-size: 44px;
+    }
+    
+    .exit-button button {
+        text-decoration: none;
+        font-size: 28px;
+    }
+    
+    .add-button button {
+        text-decoration: none;
+        font-size: 28px;
+    }
+
+}
+
+@media screen  and (max-height: 700px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    
     .input p {
         font-size: 20px;
     }
 
+    .form-header h1 {
+        font-size: 30px;
+    }
+
+    .form-header {
+        margin-bottom: 10px;    
+    }
+
     .exit-button button {
         text-decoration: none;
         font-size: 20px;
@@ -208,8 +277,32 @@ body {
         text-decoration: none;
         font-size: 20px;
     }
+}
 
-    .form-header h1 {
-        font-size: 35px;
+@media screen and (max-width: 300px) {
+    .aux-button-delete {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .add-button-delete button {
+        font-size: 18px;
+    }
+
+    .exit-button-delete button {
+        font-size: 18px;
+    }
+    
+    .form-header-delete h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    .input-delete p {
+        font-size: 20px;
+        margin-top: 3rem;
     }
 }
+
+
