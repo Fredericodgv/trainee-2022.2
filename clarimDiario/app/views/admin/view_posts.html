@@ -13,34 +13,51 @@
     </head>
 
     <body>
-        <div class="container-view">
+        <div class="container">
+            
             <div class="form">
                 <form action="#">
-            <div class="form-header-view">
+            <div class="form-header">
                     <h1>Visualizar Publicação</h1>
                 </div>
                     
-                <div class="input-view">
+                <div class="input">
                     
-                    <p class="title-add">Qual publicação deseja visualizar?</p>
+                    <p class="title-add">Título da publicação</p>
                     
                     <div class="input-box">
-                        <input id="title" type="text" placeholder="Título da publicação" required>
+                        <input id="title" type="text" placeholder="Título da publicação" disabled>
                     </div>    
                     
+                    <p class="content-add">Conteúdo da publicação</p>
+                    
+                    <div class="input-box">
+                        <input id="content" type="text" placeholder="Lorem" disabled>
+                    </div>
+                    
+                    <p class="autor-add">Autor</p>
+
+                    <div class="input-box">
+                        <input id="autor" type="text" placeholder="Autor" disabled>
+                    </div>
+                    
+                    <p class="date-add">Data</p>
+                    
+                    <div class="input-box">
+                        <input id="date" type="date" disabled>
+                    </div>
+
+                    <div class="input-box">
+                        <input id="file" type="file" disabled>
+                    </div>
+
                 </div>
 
-                <div class="aux-button view-button">
+                <div class="aux-button">
                 
                 <div class="exit-button">
                     <button>Sair</button>
                 </div>
-
-                <div class="add-button">
-                    <button>Pesquisar</button>
-                </div>
-
-
 
             </form>
         </div>
