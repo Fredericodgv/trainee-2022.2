@@ -12,6 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #bdbdbd75;
+
+    animation-name: opacidade;
+    animation-duration: 4s;
 }
 
 .container {
@@ -122,6 +125,41 @@ body {
     font-size: 30px;
 }
 
+#imagem{
+    display: none;
+}
+
+.input-box label {
+    color: black;
+    height: 55px;
+    width: 65%;
+    background-color: #d99c2b;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.input-view label {
+        color: black;
+        height: 55px;
+        width: 65%;
+        background-color: #d99c2b;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+    }
+
 /* Inicio do Forms-Delete */
 
 .form-delete{
@@ -187,6 +225,11 @@ body {
 
 /* Fim do Forms-View */
 
+@keyframes opacidade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 @media screen and (max-width: 900px) {
 
     .form-delete{
@@ -219,6 +262,14 @@ body {
     .add-button button {
         text-decoration: none;
         font-size: 24px;
+    }
+
+    .input label {
+        font-size: 18px;
+    }
+
+    .input-view label {
+        font-size: 18px;
     }
 
 }
