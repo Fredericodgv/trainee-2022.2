@@ -69,6 +69,13 @@ body {
     border-radius: 10px;
 }
 
+.aux-button-table-1 {
+    background-color: #73a4ee;
+    width: 12%;
+    display: inline;
+    margin-left: 26%
+}
+
 .aux-button-table {
     background-color: #73a4ee;
     width: 12%;
