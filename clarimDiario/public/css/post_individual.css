@@ -1,0 +1,83 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    background-color: black;
+}
+
+.logo {
+    margin-top: -40px;
+    justify-content: center;
+    background-color: black;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.identidade-post-individual{
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+.board{
+    background-color: #d91e1e;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    border-radius: 10px;
+}
+
+.aux_cards{
+    display: inline-block;
+    background-color: #d91e1e;
+    margin-top: auto;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    width: 92%;
+    height: auto;
+    background-color: #d99c2b;
+}
+
+.aux_card-title{
+    text-align: center;
+    font-size: 32px;
+    background-color: #d91e1e;
+    width: auto;
+    border-left: 50px solid #d99c2b;
+    border-right: 50px solid #d99c2b;
+    padding: 12px;
+}
+
+.card-text{
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.foto-post img{
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+}
+
+.foto-autor{
+    display: flex;
+    justify-content: end;
+    font-size: 24px;
+}
+
+.foto-autor img{
+    max-width:60px;
+    max-height:60px;
+    border-radius: 100%;
+    padding-right: 10px;
+    margin-top: 18px;
+}
+
