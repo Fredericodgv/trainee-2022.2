@@ -45,19 +45,19 @@ body {
 
 .aux_card-title{
     text-align: center;
-    font-size: 32px;
-    background-color: #d91e1e;
+    font-size: 46px;
     width: auto;
     border-left: 50px solid #d99c2b;
     border-right: 50px solid #d99c2b;
     padding: 12px;
+    padding-bottom: 0;
 }
 
 .card-text{
     text-align: justify;
     margin-left: 12px;
     margin-right: 12px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .foto-post img{
