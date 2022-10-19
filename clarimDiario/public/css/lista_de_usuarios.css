@@ -123,3 +123,9 @@ body {
     vertical-align: top;
     padding-top: 8px;
 }
+
+@media (max-width: 1150px) {
+    .logo{
+        margin-top: 0;
+    }
+}
