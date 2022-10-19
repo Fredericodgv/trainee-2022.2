@@ -1,28 +1,75 @@
-* {
+body {
     padding: 0;
     margin: 0;
+    background-color: black;
     font-family: 'Oswald', sans-serif;
 }
 
-body {
-    background-color: black;
+
+.logo img {
     width: 100%;
 }
 
-.logo {
+
+header {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-bottom: 1%;
 }
 
-.logo img {
-    width: 95%;
+.aux-button {
+    display: flex;
+    justify-content: flex-end;
+    height: 7vh;
+    width: 50%;
+    margin-right: 2.5%;
+}
+
+.aux-button button {
+    width: 50%;
+    height: 7vh;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 28px;
+    border-radius: 10px;
+}
+
+.search-bar-top {
+    display: none;
+    width: 50%;
+    margin-left: 2.5%;
+}
+
+.search-bar-top input {
+    flex: 1;
+    border: 0;
+    margin-right: 20px;
+    height: 7vh;
+    border-radius: 5px;
+    padding: 20px;
+    outline: 0;
+    font-size: 30px;
+}
+
+.search-bar-top button {
+    width: 10%;
+    border: 0;
+    border-radius: 50px;
+    height: 50px;
+    background: #f7994c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-top button span {
+    width: 100%;
 }
 
 .table {
     background-color: white;
-    margin-bottom: 5rem;
-    margin-left: 2.5%;
-    width: 95%;
+    width: 100%;
 } 
 
 .table th {
@@ -51,24 +98,6 @@ body {
     font-size: 30px;
 }
 
-.aux-button {
-    display: flex;
-    justify-content: flex-end;
-    height: 7vh;
-    width: 95%;
-    margin-left: 2.5%;
-    margin-bottom: 10px;
-}
-
-.aux-button button {
-    width: 18%;
-    height: 7vh;
-    background-color: #0d6efd;
-    color: white;
-    font-size: 28px;
-    border-radius: 10px;
-}
-
 .aux-button-table-1 {
     background-color: #73a4ee;
     width: 12%;
@@ -88,7 +117,6 @@ body {
 }
 
 .search-bar {
-    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -117,4 +145,94 @@ body {
 
 .search-bar button span {
     width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .logo img {
+        height: 15vh;
+    }
+    
+    .table tbody, 
+    .table tr, 
+    .table td {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .table thead tr {
+        display: none;
+      }
+
+      .table td {
+        position: relative;
+        padding-left: 25%;
+      }
+
+      .table th {
+        background-color: red;
+        padding-left: 10px;
+    }
+
+      .table td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 1px;
+      }
+
+      .buttons button {
+        width: 25%;
+        margin-left: 0%;
+      }
+
+      .aux-button {
+        width: 40%;
+    }
+
+    .aux-button button {
+        width: 70%;
+        font-size: 24px;
+    }
+
+    header {
+        margin-top: 10%;
+    }
+    
+    .search-bar-top {
+        width: 60%;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .search-bar-top input {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .search-bar-top button {
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .search-bar-top button {
+        width: 30%;
+    }
+
+    .aux-button button {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .table td {
+        font-size: 24px;
+    }
+
+    .aux-button button {
+        font-size: 12px;
+      }
+
 }
