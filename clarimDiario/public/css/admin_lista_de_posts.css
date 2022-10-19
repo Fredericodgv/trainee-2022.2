@@ -153,6 +153,12 @@ header {
         height: 15vh;
     }
     
+    .table {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+    }
+    
     .table tbody, 
     .table tr, 
     .table td {
@@ -178,6 +184,7 @@ header {
         content: attr(data-title);
         position: absolute;
         left: 1px;
+        margin-left: 8px;
       }
 
       .buttons button {
@@ -191,7 +198,7 @@ header {
 
     .aux-button button {
         width: 70%;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     header {
@@ -224,11 +231,16 @@ header {
         font-size: 14px;
     }
 
+    .search-bar-top input {
+        width: 100%;
+        font-size: 20px;
+    }
+
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
     .table td {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .aux-button button {
