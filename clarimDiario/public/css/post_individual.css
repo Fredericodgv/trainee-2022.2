@@ -81,3 +81,8 @@ body {
     margin-top: 18px;
 }
 
+@media (max-width: 1150px) {
+    .logo{
+        margin-top: 0;
+    }
+}
