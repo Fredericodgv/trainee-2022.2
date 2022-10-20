@@ -138,6 +138,10 @@ label #cancel {
     visibility: hidden;
   }
   
+  .sidebar {
+    width: 120px;
+  }
+  
   .sidebar a {
     padding-bottom: 60px;
     padding-top: 30px;
@@ -145,11 +149,12 @@ label #cancel {
   }
   
   .sidebar a i {
-    margin-left: -10px;
+    margin-left: 0px;
+    font-size: 38px;
   }
   
   a:hover {
-    width: 215px;
+    width: 235px;
     height: 0;
     background: inherit;
   }
@@ -158,6 +163,69 @@ label #cancel {
     opacity: 1;
     visibility: visible;
   }
+}
+
+@media(max-width : 500px) {
+    .sidebar {
+        width: 90px;
+      }
+    
+    .sidebar a {
+        font-size: 25px;
+    }
+
+    .sidebar a i {
+        font-size: 34px;
+    }
+
+    .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .sidebar a:hover i {
+        font-size: 25px;
+      }
+
+      a:hover {
+        width: 200px;
+        height: 0;
+        background: inherit;
+      }
+}
+
+@media(max-width : 300px) {
+    .sidebar {
+        width: 80px;
+      }
+    
+    .sidebar a {
+        font-size: 20px;
+    }
+
+    .sidebar a i {
+        font-size: 24px;
+    }
+
+    .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .sidebar a:hover i {
+        font-size: 25px;
+      }
+
+      a:hover {
+        width: 175px;
+        height: 0;
+        background: inherit;
+      }
+
+      .sidebar a {
+        padding-bottom: 40px;
+        padding-top: 20px;
+      }
 }
 
 @media(max-height : 855px) {
