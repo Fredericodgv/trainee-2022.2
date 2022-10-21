@@ -44,6 +44,6 @@ const altModal = function (id) { // ALTERA O STATUS DO MODAL ENTRE HIDE E NO-HID
     }
 };
 
-[...botoesModal, background_modal, ...botoesCloseModal, ...botoesSaveModal, ...botoesDeleteModal, botao_add, botao_add_confirm].forEach((el) => { // ONCLICK EVENT
-    el.addEventListener("click", () => altModal(el.dataset.modal))  
+[...botoesModal, background_modal, ...botoesCloseModal, ...botoesSaveModal, ...botoesDeleteModal, botao_add, botao_add_confirm].forEach((botao) => { // ONCLICK EVENT
+    botao.addEventListener("click", () => altModal(botao.dataset.modal))  
 });
