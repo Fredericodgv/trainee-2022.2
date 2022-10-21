@@ -18,17 +18,17 @@ const botoesDeleteModal = [...botao_delete]
  
 const botao = document.getElementsByClassName("botao"); // CAPTA TODOS OS BOTOES DA PÁGINA
 
-const botoesModal = [...botao].filter((el) => { // ALOCA SOMENTE OS BOTOES QUE DATA-MODAL != NULL, OU SEJA, QUE ABREM QUALQUER TIPO DE MODAL
-    return el.dataset.modal != null;
+const botoesModal = [...botao].filter((botao) => { // ALOCA SOMENTE OS BOTOES QUE DATA-MODAL != NULL, OU SEJA, QUE ABREM QUALQUER TIPO DE MODAL
+    return botao.dataset.modal != null;
 });
 
 const modalAberto = function () { // VERIFICA QUAL MODAL ESTÁ ABERTO
     const modal = document.getElementsByClassName("aux_center");
-    const modalOp = [...modal].filter((el) => {
-        return !el.classList.contains("hide");
+    const openedModal = [...modal].filter((modal) => {
+        return !modal.classList.contains("hide");
     })
 
-    return modalOp[0];
+    return openedModal[0];
 }
 
 const altModal = function (id) { // ALTERA O STATUS DO MODAL ENTRE HIDE E NO-HIDE 
@@ -38,8 +38,8 @@ const altModal = function (id) { // ALTERA O STATUS DO MODAL ENTRE HIDE E NO-HID
         openedModal.classList.toggle("hide");
     }
     else{
-        const modalOpen = document.getElementById(id)
-        modalOpen.classList.toggle("hide");
+        const openedModal = document.getElementById(id)
+        openedModal.classList.toggle("hide");
         background_modal.classList.toggle("hide");
     }
 };
