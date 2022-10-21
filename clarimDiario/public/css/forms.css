@@ -48,7 +48,7 @@
 }
 
 .btn_save {
-    background-color: #d99c2b;
+    background-color: #0c0ce94d;
     width: 50%;
     height: 40px;
     border-radius: 4px;
@@ -105,4 +105,36 @@
     width: 100%;
     height: auto;
     margin-left: 20%;
+}
+
+@media (max-width: 1350px) {
+    .aux_center{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .aux_center{
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .aux_center{
+        width: 100%;
+    }
+
+    .aux_center h1{
+        font-size: 24px;
+    }
+
+    .aux_center p{
+        font-size: 16px;
+    }
+
+    .btns{
+        font-size: 14px;
+    }
 }

@@ -128,4 +128,12 @@ body {
     .logo{
         margin-top: 0;
     }
+
+    .aux_btn_nav{
+        width: 40%;
+    }
+
+    .aux_form{
+        width: 100%;
+    }
 }
