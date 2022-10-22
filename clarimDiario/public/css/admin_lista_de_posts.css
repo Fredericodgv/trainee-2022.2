@@ -5,11 +5,9 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-
 .logo img {
     width: 100%;
 }
-
 
 header {
     width: 100%;
@@ -248,3 +246,373 @@ header {
       }
 
 }
+
+
+
+
+
+/* ----------------------------------Modal-Add---------------------------------- */
+
+.modal-fade {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-main {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 85%;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.modal-aux-button {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+.modal-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-header h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input p {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 19px;
+    font-style: italic;
+    padding-left: 0.5rem;
+    color: gray;
+    width: 100%;
+}
+
+.input-box input:hover {
+    background-color: #c5c4c475;
+}
+
+.input-box input:focus-visible {
+    outline: 2px solid #d91e1e;
+}
+
+.input-box input::placeholder {
+    color: gray;
+}
+
+.input-box label {
+    color: black;
+    height: 55px;
+    width: 65%;
+    background-color: #d99c2b;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#imagem{
+   display: none;
+}
+
+.add-button {
+    width: 45%;
+}
+
+.add-button button {
+    background-color: #0c0ce94d;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.exit-button {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.exit-button button {
+    background-color: #d91e1e;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/*----------------------------------Fim do Modal-Add----------------------------------*/
+
+/*----------------------------------Modal-View----------------------------------*/
+.modal-fade-view {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-main-view {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 85%;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.modal-header-view {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-header-view h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.input-view {
+    display: flex;
+    flex-direction: column;
+} 
+
+.input-view p {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.input-view label {
+    color: black;
+    height: 55px;
+    width: 65%;
+    background-color: #d99c2b;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+/*----------------------------------Fim Do Modal-View----------------------------------*/
+
+/*----------------------------------Modal Edit----------------------------------*/
+
+.modal-fade-edit {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-main-edit {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 85%;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.modal-header-edit {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-header-edit h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.input-edit {
+    display: flex;
+    flex-direction: column;
+} 
+
+.input-edit p {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+/*----------------------------------Fim Do Modal-Edit----------------------------------*/
+
+/*----------------------------------Modal-delete----------------------------------*/
+
+.modal-fade-delete {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-main-delete{  
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 40%;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.input-delete p {
+    font-size: 34px;
+    margin-top: 3rem;
+}
+
+.modal-aux-button-delete {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exit-button-delete button {
+    background-color: #d91e1e;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.add-button-delete button {
+    background-color: #0c0ce94d;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 1rem;
+}
+
+.modal-header-delete h1{
+    font-size: 65px;
+    font-weight: 700;
+}
+
+/*----------------------------------Fim Do Modal-Delete----------------------------------*/
+
+/* Javascript e animações */
+
+.modal-fade.mostrar {
+    display: flex;
+}
+
+.mostrar .modal-main {
+    animation: modal .5s;
+}
+
+
+
+.modal-fade-view.mostrar {
+    display: flex;
+}
+
+.mostrar .modal-main-view {
+    animation: modal .5s;
+}
+
+
+
+.modal-fade-edit.mostrar {
+    display: flex;
+}
+
+.mostrar .modal-main-edit {
+    animation: modal .5s;
+}
+
+
+
+.modal-fade-delete.mostrar {
+    display: flex;
+}
+
+.mostrar .modal-main-delete {
+    animation: modal .5s;
+}
+
+
+
+@keyframes modal{
+    from {
+        opacity: 0;
+        transform: translate(0, -60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
