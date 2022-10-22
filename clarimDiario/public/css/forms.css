@@ -107,6 +107,10 @@
     margin-left: 20%;
 }
 
+form {
+    display: inline-block;
+}
+
 @media (max-width: 1350px) {
     .aux_center{
         width: 50%;

@@ -27,26 +27,30 @@
         </button>
     </div>
 
-    <div class="aux_center hide" id="modal_adicionar">
-        <div class="modal-content">
-            <h1>Adicionar usuário</h1>
-            <p>Nome Completo</p>
-            <input class="nome" type="text">
-            <p>Email</p>
-            <input class="email" type="email" placeholder="example@example.com">
-            <p>Senha</p>
-            <input class="senha" type="password" placeholder="*********">
 
-            <div class="btns">
-                <button class="btn_close">
-                    Fechar
-                </button>
-                <button class="btn_add" id="add_confirm">
-                    Adicionar
-                </button>
+    <form action="#">
+        <div class="aux_center hide" id="modal_adicionar">
+            <div class="modal-content">
+                <h1>Adicionar usuário</h1>
+                <p>Nome Completo</p>
+                <input class="nome" type="text">
+                <p>Email</p>
+                <input class="email" type="email" placeholder="example@example.com">
+                <p>Senha</p>
+                <input class="senha" type="password" placeholder="*********">
+
+                <div class="btns">
+                    <button class="btn_close">
+                        Fechar
+                    </button>
+                    <button class="btn_add" id="add_confirm">
+                        Adicionar
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
+
 
     <div class="identidade-lista-de-usuarios">
 
@@ -85,26 +89,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -112,29 +115,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -143,23 +146,24 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
@@ -176,26 +180,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -203,29 +206,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -234,27 +237,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
 
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row">3</th>
@@ -266,26 +271,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -293,29 +297,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -324,27 +328,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
 
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row">4</th>
@@ -356,26 +362,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -383,29 +388,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -414,27 +419,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
 
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row">5</th>
@@ -446,26 +453,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -473,29 +479,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -504,27 +510,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
 
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row">6</th>
@@ -536,26 +544,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -563,29 +570,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -594,27 +601,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
 
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row">7</th>
@@ -626,26 +635,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -653,29 +661,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -684,27 +692,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
 
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row">8</th>
@@ -716,26 +726,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -743,29 +752,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -774,27 +783,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
 
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row">9</th>
@@ -806,26 +817,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -833,29 +843,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -864,27 +874,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
 
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row">10</th>
@@ -896,26 +908,25 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_visualizar">
+                                    <div class="modal-content">
+                                        <h1>Visualizar Usuário</h1>
+                                        <p>Nome Completo</p>
+                                        <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
+                                        <p>Email</p>
+                                        <input class="email" type="email" placeholder="Email do Usuário" disabled>
+                                        <p>Senha</p>
+                                        <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
 
-                            <div class="aux_center hide" id="modal_visualizar">
-                                <div class="modal-content">
-
-                                    <h1>Visualizar Usuário</h1>
-                                    <p>Nome Completo</p>
-                                    <input class="nome" type="text" placeholder="Nome do Usuário" disabled>
-                                    <p>Email</p>
-                                    <input class="email" type="email" placeholder="Email do Usuário" disabled>
-                                    <p>Senha</p>
-                                    <input class="senha" type="password" placeholder="Senha do Usuário" disabled>
-
-                                    <div class="btns">
-                                        <button class="botao btn_close">
-                                            Fechar
-                                        </button>
+                                        <div class="btns">
+                                            <button class="botao btn_close">
+                                                Fechar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
                                 <a>
@@ -923,29 +934,29 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_editar">
+                                    <div class="modal-content">
+                                        <h1>Modificar Usuário</h1>
+                                        <p>Alterar Nome</p>
+                                        <input class="nome" type="text" placeholder="Digite o novo nome">
+                                        <p>Alterar Email</p>
+                                        <input class="email" type="email" placeholder="Digite o novo email">
+                                        <p>Alterar Senha</p>
+                                        <input class="senha" type="password" placeholder="Digite a nova senha">
 
-                            <div class="aux_center hide" id="modal_editar">
-                                <div class="modal-content">
-                                    <h1>Modificar Usuário</h1>
-                                    <p>Alterar Nome</p>
-                                    <input class="nome" type="text" placeholder="Digite o novo nome">
-                                    <p>Alterar Email</p>
-                                    <input class="email" type="email" placeholder="Digite o novo email">
-                                    <p>Alterar Senha</p>
-                                    <input class="senha" type="password" placeholder="Digite a nova senha">
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_save">
+                                                Salvar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_save">
-                                            Salvar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </form>
 
                             <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
                                 style="background-color: red;" role="button">
@@ -954,27 +965,30 @@
                                 </a>
                             </button>
 
+                            <form action="#">
+                                <div class="aux_center hide" id="modal_deletar">
+                                    <div class="modal-content">
+                                        <h1>Deletar Usuário</h1>
+                                        <p>Tem certeza que quer deletar esse usuário?</p>
 
-                            <div class="aux_center hide" id="modal_deletar">
-                                <div class="modal-content">
-                                    <h1>Deletar Usuário</h1>
-                                    <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <div class="btns">
+                                            <button class="btn_close">
+                                                Fechar
+                                            </button>
+                                            <button class="btn_delete">
+                                                Deletar
+                                            </button>
 
-                                    <div class="btns">
-                                        <button class="btn_close">
-                                            Fechar
-                                        </button>
-                                        <button class="btn_delete">
-                                            Deletar
-                                        </button>
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
 
 
                         </td>
                     </tr>
+
+
 
 
                 </tbody>
