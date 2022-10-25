@@ -68,7 +68,7 @@ header {
 .table {
     background-color: white;
     width: 100%;
-} 
+}
 
 .table th {
     font-size: 30px;
@@ -145,113 +145,11 @@ header {
     width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-
-    .logo img {
-        height: 15vh;
-    }
-    
-    .table {
-        width: 95%;
-        margin-left: 2.5%;
-        margin-top: 2.5%;
-    }
-    
-    .table tbody, 
-    .table tr, 
-    .table td {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .table thead tr {
-        display: none;
-      }
-
-      .table td {
-        position: relative;
-        padding-left: 25%;
-      }
-
-      .table th {
-        background-color: red;
-        padding-left: 10px;
-    }
-
-      .table td:before {
-        content: attr(data-title);
-        position: absolute;
-        left: 1px;
-        margin-left: 8px;
-      }
-
-      .buttons button {
-        width: 25%;
-        margin-left: 0%;
-      }
-
-      .aux-button {
-        width: 40%;
-    }
-
-    .aux-button button {
-        width: 70%;
-        font-size: 20px;
-    }
-
-    header {
-        margin-top: 10%;
-    }
-    
-    .search-bar-top {
-        width: 60%;
-        display: flex;
-        justify-content: center; 
-    }
-
-    .search-bar-top input {
-        width: 100%;
-        font-size: 25px;
-    }
-
-    .search-bar-top button {
-        width: 20%;
-    }
-
-}
-
-@media screen and (max-width: 550px) {
-    .search-bar-top button {
-        width: 30%;
-    }
-
-    .aux-button button {
-        font-size: 14px;
-    }
-
-    .search-bar-top input {
-        width: 100%;
-        font-size: 20px;
-    }
-
-}
-
-@media screen and (max-width: 350px) {
-    .table td {
-        font-size: 22px;
-    }
-
-    .aux-button button {
-        font-size: 12px;
-      }
-
-}
-
-
-
 
 
 /* ----------------------------------Modal-Add---------------------------------- */
+
+
 
 .modal-fade {
     width: 100vw;
@@ -272,21 +170,21 @@ header {
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 85%;
-    min-width: 300px;
-    padding: 40px;
+    height: 95%;
+    min-width: 260px;
     border-radius: 10px;
+    padding: 40px;
 }
 
 .modal-aux-button {
     display: flex;
     justify-content: end;
     align-items: flex-end;
-    margin-top: 1rem;
+    margin-top: 1%;
 }
 
 .modal-header {
-    margin-bottom: 3rem;
+    margin-bottom: 3%;
     display: flex;
     justify-content: space-between;
 }
@@ -313,14 +211,14 @@ header {
 }
 
 .input-box input {
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
+    margin: 1% 0;
+    padding: 3% 1%;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
-    font-size: 19px;
+    font-size: 18px;
     font-style: italic;
-    padding-left: 0.5rem;
+    padding-left: 3%;
     color: gray;
     width: 100%;
 }
@@ -342,8 +240,8 @@ header {
     height: 55px;
     width: 65%;
     background-color: #d99c2b;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
     border-radius: 15px;
     font-size: 20px;
     display: flex;
@@ -353,8 +251,8 @@ header {
     cursor: pointer;
 }
 
-#imagem{
-   display: none;
+#imagem {
+    display: none;
 }
 
 .add-button {
@@ -384,9 +282,16 @@ header {
     font-size: 30px;
 }
 
+
+
 /*----------------------------------Fim do Modal-Add----------------------------------*/
 
+
+
 /*----------------------------------Modal-View----------------------------------*/
+
+
+
 .modal-fade-view {
     width: 100vw;
     height: 100vh;
@@ -406,14 +311,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 85%;
-    min-width: 300px;
+    height: 95%;
+    min-width: 260px;
     padding: 40px;
     border-radius: 10px;
 }
 
 .modal-header-view {
-    margin-bottom: 3rem;
+    margin-bottom: 3%;
     display: flex;
     justify-content: space-between;
 }
@@ -426,7 +331,7 @@ header {
 .input-view {
     display: flex;
     flex-direction: column;
-} 
+}
 
 .input-view p {
     font-size: 30px;
@@ -438,19 +343,26 @@ header {
     height: 55px;
     width: 65%;
     background-color: #d99c2b;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-style: italic;
+    cursor: pointer;
 }
+
+
 
 /*----------------------------------Fim Do Modal-View----------------------------------*/
 
+
+
 /*----------------------------------Modal Edit----------------------------------*/
+
+
 
 .modal-fade-edit {
     width: 100vw;
@@ -471,14 +383,14 @@ header {
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 85%;
-    min-width: 300px;
+    height: 95%;
+    min-width: 260px;
     padding: 40px;
     border-radius: 10px;
 }
 
 .modal-header-edit {
-    margin-bottom: 3rem;
+    margin-bottom: 3%;
     display: flex;
     justify-content: space-between;
 }
@@ -491,16 +403,38 @@ header {
 .input-edit {
     display: flex;
     flex-direction: column;
-} 
+}
 
 .input-edit p {
     font-size: 30px;
     margin-bottom: 0px;
 }
 
+.input-edit label {
+    color: black;
+    height: 55px;
+    width: 65%;
+    background-color: #d99c2b;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+
 /*----------------------------------Fim Do Modal-Edit----------------------------------*/
 
+
+
 /*----------------------------------Modal-delete----------------------------------*/
+
+
 
 .modal-fade-delete {
     width: 100vw;
@@ -515,25 +449,25 @@ header {
     align-items: center;
 }
 
-.modal-main-delete{  
+.modal-main-delete {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    height: 40%;
-    min-width: 300px;
+    width: 45%;
+    height: 55%;
+    min-width: 260px;
     padding: 40px;
     border-radius: 10px;
 }
 
 .input-delete p {
     font-size: 34px;
-    margin-top: 3rem;
+    margin-top: 3%;
 }
 
 .modal-aux-button-delete {
-    margin-top: 4rem;
+    margin-top: 6%;
     display: flex;
     justify-content: flex-end;
 }
@@ -552,17 +486,23 @@ header {
     width: 100%;
     cursor: pointer;
     font-size: 35px;
-    margin-left: 1rem;
+    margin-left: 10%;
 }
 
-.modal-header-delete h1{
+.modal-header-delete h1 {
     font-size: 65px;
     font-weight: 700;
 }
 
+
+
 /*----------------------------------Fim Do Modal-Delete----------------------------------*/
 
-/* Javascript e animações */
+
+
+/*----------------------------------Javascript e animações----------------------------------*/
+
+
 
 .modal-fade.mostrar {
     display: flex;
@@ -604,7 +544,7 @@ header {
 
 
 
-@keyframes modal{
+@keyframes modal {
     from {
         opacity: 0;
         transform: translate(0, -60px);
@@ -616,3 +556,329 @@ header {
     }
 }
 
+
+/*----------------------------------Fim do Javascript e animações----------------------------------*/
+
+
+
+/*----------------------------------Responsividade----------------------------------*/
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .logo img {
+        height: 15vh;
+    }
+
+    .table {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+    }
+
+    .table tbody,
+    .table tr,
+    .table td {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table thead tr {
+        display: none;
+    }
+
+    .table td {
+        position: relative;
+        padding-left: 25%;
+    }
+
+    .table th {
+        background-color: red;
+        padding-left: 10px;
+    }
+
+    .table td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 1px;
+        margin-left: 8px;
+    }
+
+    .buttons button {
+        width: 25%;
+        margin-left: 0%;
+    }
+
+    .aux-button {
+        width: 40%;
+    }
+
+    .aux-button button {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    header {
+        margin-top: 10%;
+    }
+
+    .search-bar-top {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-bar-top input {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .search-bar-top button {
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .search-bar-top button {
+        width: 30%;
+    }
+
+    .aux-button button {
+        font-size: 14px;
+    }
+
+    .search-bar-top input {
+        width: 100%;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .table td {
+        font-size: 22px;
+    }
+
+    .aux-button button {
+        font-size: 12px;
+    }
+
+}
+
+
+/*--------------Modais-----------------*/
+
+@media screen and (max-height: 920px) {
+    
+
+/*---------Adicionar-----------*/
+
+    .input p {
+        font-size: 22px;
+    }
+
+    .modal-header {
+        margin-bottom: 5%;
+    }
+
+    .modal-main {
+        width: 40%;
+        height: 85%;
+    }
+    
+
+
+    .modal-main-edit {
+        width: 40%;
+        height: 85%;
+    }
+
+    .modal-main-delete {
+        width: 40%;
+        height: 85%;
+    }
+
+
+
+    .modal-header h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .input-box label {
+        height: 46px;
+        width: 65%;
+        margin-top: 1.5%;
+        margin-bottom: 5%;
+        font-size: 15px;
+    }
+
+    .add-button button {
+        font-size: 21px;
+    }
+
+    .exit-button button {
+        font-size: 21px;
+    }
+
+
+/*---------View-----------*/
+
+
+    .modal-main-view {
+        width: 40%;
+        height: 85%;
+    }
+
+    .modal-header-view {
+        margin-bottom: 5%;
+    }
+
+    .modal-header-view h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+    
+    .input-view p {
+        font-size: 24px;
+    }
+
+    .input-view label {
+        height: 46px;
+        width: 65%;
+        margin-top: 1.5%;
+        margin-bottom: 5%;
+        font-size: 15px;
+    }
+
+/*---------Editar-----------*/
+
+    .modal-main-edit {
+        width: 40%;
+        height: 85%;
+    }
+
+    .modal-header-edit {
+        margin-bottom: 5%;
+    }
+
+    .modal-header-edit h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+    
+    .input-edit p {
+        font-size: 24px;
+    }
+
+    .input-edit label {
+        height: 46px;
+        width: 65%;
+        margin-top: 1.5%;
+        margin-bottom: 5%;
+        font-size: 15px;
+    }
+
+/*---------Deletar-----------*/
+
+    .modal-main-delete {
+        width: 40%;
+        height: 60%;
+    }
+
+    .modal-header-delete {
+        margin-bottom: auto;
+    }
+
+    .modal-header-delete h1 {
+        font-size: 50px;
+        margin-bottom: 5%;
+    }
+
+    .input-delete p {
+        font-size: 27px;
+    }
+
+    .exit-button-delete button{
+        font-size: 26px;
+    }
+
+    .add-button-delete button {
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (max-height: 700px) {
+    
+/*---------Adicionar-----------*/
+    
+    .input p {
+        font-size: 16px;
+    }
+
+    .modal-header h1 {
+        font-size: 30px;
+    }
+
+    .input-box label {
+        font-size: 12px;
+    }
+    
+/*---------View-----------*/
+    
+    .modal-header-view h1 {
+        font-size: 30px;
+    }
+
+    .input-view p {
+        font-size: 16px;
+    }
+
+    .input-view label {
+        font-size: 12px;
+    }
+
+/*---------Editar-----------*/
+
+    .modal-header-edit h1 {
+        font-size: 30px;
+    }
+
+    .input-edit p {
+        font-size: 16px;
+    }
+
+    .input-edit label {
+        font-size: 12px;
+    }
+
+/*---------Deletar-----------*/
+
+    .modal-main-delete {
+        height: 60%;
+        width: 75%;
+        padding: 30px;
+    }
+
+    .modal-header-delete h1 {
+        font-size: 44px;
+    }
+
+    .input-delete p {
+        font-size: 24px;
+    }
+
+    .exit-button-delete button{
+        font-size: 22px;
+    }
+
+    .add-button-delete button {
+        font-size: 22px;
+    }
+
+}
+
+/*----------------------------------Fim da Responsividade----------------------------------*/

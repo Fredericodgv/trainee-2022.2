@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbdbd75;
+
+    animation-name: opacidade;
+    animation-duration: 4s;
+}
+
+.container {
+    width: 40%;
+    height: 90vh;
+    display: flex;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+} 
+
+.input p {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 19px;
+    font-style: italic;
+    padding-left: 0.5rem;
+    color: gray;
+    width: 100%;
+}
+
+.input-box input:hover {
+    background-color: #c5c4c475;
+}
+
+.input-box input:focus-visible {
+    outline: 2px solid #d91e1e;
+}
+
+.input-box input::placeholder {
+    color: gray;
+}
+
+.exit-button {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.add-button {
+    width: 45%;
+}
+
+.exit-button button {
+    background-color: #d91e1e;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.add-button button {
+    background-color: #0c0ce94d;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.aux-button {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+.exit-button button {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.add-button button {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#imagem{
+    display: none;
+}
+
+.input-box label {
+    color: black;
+    height: 55px;
+    width: 65%;
+    background-color: #d99c2b;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.input-view label {
+        color: black;
+        height: 55px;
+        width: 65%;
+        background-color: #d99c2b;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+    }
+
+/* Inicio do Forms-Delete */
+
+.form-delete{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.aux-button-delete {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exit-button-delete button {
+    background-color: #d91e1e;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.add-button-delete button {
+    background-color: #0c0ce94d;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 35px;
+    margin-left: 1rem;
+}
+
+.form-header-delete h1{
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.input-delete p {
+    font-size: 34px;
+    margin-top: 3rem;
+}
+
+/* Fim do Forms-Delete */
+
+/* Inicio do Forms-View */
+
+.form-header-view h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.input-view p {
+    font-size: 26px;
+    margin-top: 4.5rem;
+}
+
+.view-button {
+    margin-top: 2.5rem;
+}
+
+/* Fim do Forms-View */
+
+@keyframes opacidade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media screen and (max-width: 900px) {
+
+    .form-delete{
+        width: 100%;
+        height: 90vh;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .input p {
+        font-size: 26px;
+    }
+
+    .form-header h1 {
+        font-size: 40px;
+    }
+
+    .form-header {
+        margin-bottom: 10px;    
+    }
+    
+    .exit-button button {
+        text-decoration: none;
+        font-size: 24px;
+    }
+    
+    .add-button button {
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .input label {
+        font-size: 18px;
+    }
+
+    .input-view label {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .input p {
+        font-size: 30px;
+    }
+
+    .form-header h1 {
+        font-size: 44px;
+    }
+    
+    .exit-button button {
+        text-decoration: none;
+        font-size: 28px;
+    }
+    
+    .add-button button {
+        text-decoration: none;
+        font-size: 28px;
+    }
+
+}
+
+@media screen  and (max-height: 700px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .input p {
+        font-size: 20px;
+    }
+
+    .form-header h1 {
+        font-size: 30px;
+    }
+
+    .form-header {
+        margin-bottom: 10px;    
+    }
+
+    .exit-button button {
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .add-button button {
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .aux-button-delete {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .add-button-delete button {
+        font-size: 18px;
+    }
+
+    .exit-button-delete button {
+        font-size: 18px;
+    }
+    
+    .form-header-delete h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    .input-delete p {
+        font-size: 20px;
+        margin-top: 3rem;
+    }
+}
+
+
