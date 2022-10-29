@@ -235,26 +235,6 @@ header {
     color: gray;
 }
 
-.input-box label {
-    color: black;
-    height: 55px;
-    width: 65%;
-    background-color: #d99c2b;
-    margin-top: 1.5%;
-    margin-bottom: 5%;
-    border-radius: 15px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    cursor: pointer;
-}
-
-#imagem {
-    display: none;
-}
-
 .add-button {
     width: 45%;
 }
@@ -338,22 +318,6 @@ header {
     margin-bottom: 0px;
 }
 
-.input-view label {
-    color: black;
-    height: 55px;
-    width: 65%;
-    background-color: #d99c2b;
-    margin-top: 1.5%;
-    margin-bottom: 5%;
-    border-radius: 15px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    cursor: pointer;
-}
-
 
 
 /*----------------------------------Fim Do Modal-View----------------------------------*/
@@ -409,23 +373,6 @@ header {
     font-size: 30px;
     margin-bottom: 0px;
 }
-
-.input-edit label {
-    color: black;
-    height: 55px;
-    width: 65%;
-    background-color: #d99c2b;
-    margin-top: 1.5%;
-    margin-bottom: 5%;
-    border-radius: 15px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    cursor: pointer;
-}
-
 
 
 /*----------------------------------Fim Do Modal-Edit----------------------------------*/
