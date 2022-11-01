@@ -1,0 +1,144 @@
+
+.aux_center h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.aux_center p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.nome {
+    width: 60%;
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+.email {
+    width: 60%;
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+.senha {
+    width: 60%;
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+.btns {
+    width: 60%;
+    text-align: right;
+    margin-top: 12px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn_close {
+    background-color: #d91e1e;
+    width: 30%;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.btn_save {
+    background-color: #0c0ce94d;
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.btn_add {
+    background-color: #0c0ce94d;
+    width: 40%;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn_delete {
+    background-color: #0c0ce94d;
+    width: 40%;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.background-modal{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hide{
+    display: none;
+}
+
+.aux_center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 30%;
+    height: auto;
+}
+
+.modal-content{
+    width: 100%;
+    height: auto;
+    margin-left: 20%;
+}
+
+form {
+    display: inline-block;
+}
+
+@media (max-width: 1350px) {
+    .aux_center{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .aux_center{
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .aux_center{
+        width: 100%;
+    }
+
+    .aux_center h1{
+        font-size: 24px;
+    }
+
+    .aux_center p{
+        font-size: 16px;
+    }
+
+    .btns{
+        font-size: 14px;
+    }
+}

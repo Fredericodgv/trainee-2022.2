@@ -1,0 +1,139 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    background-color: black;
+}
+
+.logo {
+    margin-top: -40px;
+    justify-content: center;
+    background-color: black;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.add_btn {
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+    background-color: black;
+}
+
+.add_btn button {
+    background-color: blue;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.add_btn a {
+    width: 200px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.identidade-lista-de-usuarios {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+.aux_nav {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    margin-right: 2%;
+}
+
+.aux_container {
+    width: 100%;
+}
+
+.aux_form {
+    height: 30px;
+    width: 80%;
+    font-size: 20px;
+    border-radius: 2px 0px 0px 2px;
+}
+
+.aux_btn_nav {
+    height: 30px;
+    border-radius: 0px 2px 2px 0px;
+    font-size: 20px;
+    padding-right: 18px;
+    padding-left: 10px;
+    color: black;
+    background-color: #d99c2b;
+    border: none;
+}
+
+.board {
+    background-color: #d91e1e;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-radius: 2px;
+}
+
+.aux_table {
+    padding-top: 100px;
+    padding-left: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+.info-usuario {
+    background-color: #d99c2b;
+    line-height: 44px;
+    vertical-align: middle;
+    margin-right: 5%;
+}
+
+.titulo-lista-de-usuarios {
+    font-size: 26px;
+    line-height: 50px;
+}
+
+.numero-usuario {
+    width: 7%;
+    text-align: center;
+}
+
+.nome-usuario {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.aux_btn_info-usuario {
+    margin-top: 10px;
+    width: 50px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.aux_icon {
+    color: white;
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+@media (max-width: 1150px) {
+    .logo{
+        margin-top: 0;
+    }
+
+    .aux_btn_nav{
+        width: 40%;
+    }
+
+    .aux_form{
+        width: 100%;
+    }
+}

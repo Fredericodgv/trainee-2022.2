@@ -1,0 +1,290 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.sidebar header {
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.sidebar img {
+  width: 60%;
+}
+
+.sidebar {
+  background:rgb(240, 128, 0);
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  left: -400px;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 55px;
+  line-height: 110px;
+  text-align: center;
+  background: #ff000069;
+  user-select: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.sidebar a {
+  color: black;
+  display: block;
+  box-sizing: border-box;
+  height: 0;
+  width: 100%;
+  padding-left: 30px;
+  padding-bottom: 80px;
+  padding-top: 40px;
+  font-size: 30px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  transition: all .5s ease;
+  font-family: 'Oswald', sans-serif;
+  pointer-events: none;
+}
+
+.sidebar a i {
+font-size: 30px;
+margin-right: 10px;
+pointer-events: none;
+}
+
+.sidebar a span {
+letter-spacing: 1px;
+pointer-events: visibleStroke;
+}
+
+.dashboard {
+  margin-top: 0;
+}
+
+a:hover {
+  border-left: 5px solid red;
+  background-color: rgb(255, 192, 0);
+  text-decoration: none;
+}
+
+a:link { text-decoration: none; }
+
+#check {
+  display: none;
+}
+
+label #btn,label #cancel {
+  background: #ff0000;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  margin: 10px 30px;
+  text-align: center;
+  font-size: 55px;
+  height: 60px;
+  width: 60px;
+  line-height: 55px;
+
+  transition: all .5s ease;
+}
+
+label #cancel {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  margin-left: 405px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#check:checked ~ label #cancel {
+  margin-left: 405px;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media(max-width : 860px) {
+
+header,#logo_sidebar{
+  display: none;
+}
+
+#btn,#cancel {
+  display: block;
+}
+
+#check {
+  display: none;
+}  
+
+label #cancel {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #cancel {
+  margin-left: 26%;
+  opacity: 1;
+  visibility: visible;
+}
+
+#check:checked ~ label #btn {
+  margin-left: 26%;
+  opacity: 0;
+  visibility: hidden;
+}  
+
+.sidebar {
+  width: 25.5%;
+  height: auto;
+  left: -400px;
+  margin: 10 0;
+}
+
+span {
+  position: absolute;
+  margin-left: -30px;
+}
+
+.sidebar a {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  height: 0;
+}
+
+.sidebar a i {
+  display: flex;
+  margin-left: -20px;
+  font-size: 38px;
+}
+
+label #btn,label #cancel {
+font-size: 45px;
+height: 45px;
+width: 45px;
+line-height: 40px;
+}
+
+}
+
+@media(max-width : 600px) {
+.sidebar {
+    width: 30%;
+}
+  
+.sidebar a {
+    font-size: 18px;
+    pointer-events: all;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-left: 28px;
+}
+
+.sidebar a i {
+    font-size: 30px;
+    margin-left: -20px;
+}
+
+.sidebar a:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+
+#check:checked ~ label #cancel {
+  margin-left: 31%;
+  opacity: 1;
+  visibility: visible;
+}
+
+#check:checked ~ label #btn {
+  margin-left: 31%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+label #btn,label #cancel {
+  font-size: 45px;
+  height: 45px;
+  width: 45px;
+  line-height: 40px;
+}
+
+}
+
+@media(max-width : 300px) {
+.sidebar {
+  width: 30%;
+}
+  
+.sidebar a {
+  font-size: 13px;
+  pointer-events: all;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.sidebar a i {
+  font-size: 20px;
+  margin-left: -20px;
+}
+
+.sidebar a:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar a:hover i {
+  font-size: 25px;
+}
+
+#check:checked ~ label #cancel {
+  margin-left: 31%;
+  opacity: 1;
+  visibility: visible;
+}
+
+#check:checked ~ label #btn {
+  margin-left: 31%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+label #btn,label #cancel {
+  font-size: 30px;
+  height: 35px;
+  width: 35px;
+  line-height: 30px;
+}
+
+}
+
+@media(max-height : 855px) {
+  .logo {
+      display: none;
+}
+
+}
