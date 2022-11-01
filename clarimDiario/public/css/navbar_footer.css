@@ -1,0 +1,27 @@
+.container-fluid{
+    background-color: #d99b2c;
+    font-family: Montserrat;
+}
+
+.navbar-brand{
+    margin-bottom: 4px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-item-login{
+    font-weight: bold;
+}
+
+.col-auto button{
+    background-color: #d99b2c;
+    color: white;
+    font-weight: bold;
+}
+
+.redesocial_footer{
+    text-decoration: none;
+    color: white;
+}
