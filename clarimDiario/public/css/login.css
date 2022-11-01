@@ -1,0 +1,60 @@
+body{
+    background-color: #000000;
+    font-family: 'Montserrat';
+}
+.container{
+    background-color: #000000;
+    font-family: Montserrat;
+}
+
+.card{
+    background-color: #d91e1e;
+}
+
+.btn{
+    background-color: #d99c2b;
+    font-weight: bold;
+}
+
+.form-control{
+    font-size: 16px;
+}
+
+.relembrar{
+    align-items:center;
+    font-size: 12px;
+}
+
+.relembrar span{
+    margin-right: 5px;
+    height: 25px;
+    accent-color: #d99c2b;
+}
+
+.ajuda a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.ajuda a:hover{
+    text-decoration: underline;
+}
+
+.entrar{
+    height: 45px;
+    width: 100%;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 18px;
+}
+
+.entrar:hover{
+    background-color: #d99c2b;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+}
