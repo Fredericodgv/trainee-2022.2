@@ -2,5 +2,8 @@
 
 use App\Core\Router;
 
-//-----------Rotas do Front-------------//
+// Exemplo de Rota
+// $Router->get('/home', 'HomeController@index');
+// $Router->get('/posts', 'PostController@index');
+
 
