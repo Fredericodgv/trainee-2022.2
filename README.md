@@ -132,10 +132,15 @@ git config --global user.email email@codejr.com.br
 ### Como executar o projeto inicial
 \* É necessário ter o _PHP 8.0+_
 1. Abra o Terminal na Pasta do Projeto;
+
 2. Instale as dependências necessárias: `composer install`;
+
 3. Atualize as dependências: `composer update`;
+
 4. Rode o comando composer `dump-autoload`;
+
 5. Crie um banco de dados `sql` com o nome de `sua preferencia e coloque o nome dele dentro do arquivo start_application que está dentro do diretorio bootstrap`;
+
 6. Rode as migrations com o comando `php bootstrap run_all_migrations.php`;
 
 ### Comandos atualmente presentes nesse repositorio
