@@ -141,8 +141,6 @@ git config --global user.email email@codejr.com.br
 
 5. Crie um banco de dados `sql` com o nome de `sua preferencia e coloque o nome dele dentro do arquivo start_application que está dentro do diretorio bootstrap`;
 
-6. Rode as migrations com o comando `php bootstrap run_all_migrations.php`;
-
 ### Comandos atualmente presentes nesse repositorio
 1. `php codejr make:migration`: Comando responsavel por criar uma migration. Seus parametros são `1° o nome da tabela`, como por exemplo, "users", `2°: --m` , responsavel por criar uma Model junto a migration. A migration serve para auxiliar os desenvolvedores a manterem o controle das versões do banco de dados, já a model serve para representar o elemento de uma determinada tabela. Rode o comando composer `composer dump-autoload` para que o sistema identifique a nova migration criada.
 
