@@ -16,7 +16,6 @@
 * Emmanuel Gomes Nassif
 * Felipe Souza Magalhães Sant'Anna
 * Giovanni Almeida Dutra
-* Rodrigo Campos Figueredo
 
 
 #### Scrum Master:
