@@ -13,18 +13,21 @@
 }
 
 .nome {
+    font-size: 18px;
     width: 60%;
     height: 30px;
     margin-bottom: 12px;
 }
 
 .email {
+    font-size: 18px;
     width: 60%;
     height: 30px;
     margin-bottom: 12px;
 }
 
 .senha {
+    font-size: 18px;
     width: 60%;
     height: 30px;
     margin-bottom: 12px;
