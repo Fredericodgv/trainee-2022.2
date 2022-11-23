@@ -1,11 +1,14 @@
 ### VisualStudioCode ###
-.clarimDiaro/vscode/*
-.clarimDiaro/vendor/*
+clarimDiaro/vscode/*
+clarimDiaro/vendor/*
+clarimDiario/vendor
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+
+
 
 # Local History for Visual Studio Code
 .history/
