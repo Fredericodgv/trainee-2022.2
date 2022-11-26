@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Controllers;
-class HomeController extends Controller
+
+class PostController extends Controller
 {
     // public function __construct()
     // {
@@ -11,4 +12,11 @@ class HomeController extends Controller
     //         exit();
     //     }
     // }
+
+    //retorna pagina principal
+    public function index()
+    {
+        return view('admin/admin_lista_de_posts');
+    }
+
 }
