@@ -15,8 +15,8 @@ class poststable
             $table->text("content");
             $table->string("image");
             $table->date("created_at");
-            $table->integer("author");
-            $table->timestamps();
+            $table->unsignedBigInteger("author");
+            $table->foreign("autor")->references("id")->on("users");
         });
     }
 
