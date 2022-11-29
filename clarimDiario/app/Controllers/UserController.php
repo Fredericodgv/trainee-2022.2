@@ -26,6 +26,11 @@ class UserController extends Controller
     public function show()
     {
 
+        $id = $_POST["id"];
+
+        App::get('database')->show('users', compact('id'));
+
+        //return redirect('lista_de_usuarios');
 
     }
 
@@ -80,13 +85,14 @@ class UserController extends Controller
     // retorna a pagina para editar um elemento
     public function edit()
     {
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+        $id = $_POST['id'];
+        $nome = $_POST['nome_usuario'];
+        $email = $_POST['email_usuario'];
+        $senha = $_POST['senha_usuario'];
 
-        App:get('database')->edit('users', $_POST['id_users'], compact('nome', 'email', 'senha'));
+        App:get('database')->update('users', $id, $nome, $email, $senha);
 
-        return redirect('lista_de_usuarios');
+        //return redirect('lista_de_usuarios');
 
     }
 
@@ -99,11 +105,10 @@ class UserController extends Controller
     // deleta um elemento e redireciona para alguma rota
     public function delete()
     {
-
-        $id = $_POST['id_users'];
+        $id = $_POST["id"];
 
         App::get('database')->remove('users', compact('id'));
 
-        //return redirect('lista_de_usuarios');
+        return redirect('lista_de_usuarios');
     }
 }

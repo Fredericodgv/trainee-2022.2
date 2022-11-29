@@ -91,10 +91,12 @@
                             </button>
 
 
-                            <form method="get" >
+                            <form action = "/admin/show" method="get" >
                                 <div class="aux_center hide" id="modal_visualizar">
                                     <div class="modal-content">
                                         <h1>Visualizar Usuário</h1>
+                                        <input type="hidden" value = "<?= $user->id_users ?>" name = "id" >
+
                                         <p>Nome Completo</p>
                                         <input class="nome" type="text" id="nome_usuario" name="nome_usuario" placeholder= <?= $user->Nome ?> disabled>
                                         <p>Email</p>
@@ -117,9 +119,11 @@
                                 </a>
                             </button>
 
-                            <form action="/admin/update" method="post">
+                            <form action="/admin/edit" method="post">
                                 <div class="aux_center hide" id="modal_editar">
                                     <div class="modal-content">
+                                    <input type="hidden" value = "<?= $user->id_users ?>" name = "id" >
+
                                         <h1>Modificar Usuário</h1>
                                         <p>Alterar Nome</p>
                                         <input class="nome" type="text" id="nome_usuario" name="nome_usuario" placeholder= <?= $user->Nome ?>>
@@ -148,11 +152,12 @@
                                 </a>
                             </button>
 
-                            <form action="/admin/delete" method="post">
+                            <form action="admin/delete" method="post">
                                 <div class="aux_center hide" id="modal_deletar">
                                     <div class="modal-content">
                                         <h1>Deletar Usuário</h1>
                                         <p>Tem certeza que quer deletar esse usuário?</p>
+                                        <input type="hidden" value = "<?= $user->id_users ?>" name = "id" >
 
                                         <div class="btns">
                                             <button class="btn_close" type="button">

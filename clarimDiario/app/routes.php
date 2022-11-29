@@ -8,6 +8,8 @@ use App\Core\Router;
 
 $router->get('lista_de_usuarios', 'UserController@index');
 
+$router->get('admin/show', 'UserController@show');
+
 $router->post('admin/create', 'UserController@create');
 
 $router->post('admin/edit', 'UserController@edit');
