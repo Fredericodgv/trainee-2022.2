@@ -17,7 +17,7 @@
     <div class="container">
 
         <div class="form form-delete">
-            <form action="#">
+            <form action="../posts/delete_posts.php" method="POST">
                 <div class="form-header-delete">
                     <h1>Excluir Publicação</h1>
                 </div>

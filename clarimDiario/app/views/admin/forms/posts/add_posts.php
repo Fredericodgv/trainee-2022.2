@@ -19,7 +19,7 @@
     <div class="container">
 
         <div class="form">
-            <form action="#">
+            <form action="#" method="POST">
                 <div class="form-header">
                     <h1>Adicionar Publicação</h1>
                 </div>
@@ -27,31 +27,27 @@
                 <div class="input">
 
                     <p class="title-add">Título da publicação</p>
-
                     <div class="input-box">
                         <input id="title" type="text" placeholder="Título da publicação" required>
                     </div>
 
                     <p class="content-add">Conteúdo da publicação</p>
-
                     <div class="input-box">
-                        <input id="content" type="text" placeholder="Lorem" required>
+                        <input id="content" type="text"  placeholder="Lorem" required>
                     </div>
 
                     <p class="autor-add">Autor</p>
-
                     <div class="input-box">
-                        <input id="autor" type="text" placeholder="Autor da publicação" required>
+                        <input id="autor" type="text"  placeholder="Autor da publicação" required>
                     </div>
 
                     <p class="date-add">Data</p>
-
                     <div class="input-box">
-                        <input id="date" type="date" required>
+                        <input id="date" type="date"  required>
                     </div>
 
                     <div class="input-box">
-                        <input id="imagem" type="file" accept="image/*" required>
+                        <input id="imagem" type="file"  accept="image/*" required>
                         <label for="file">
                             <span class="material-symbols-outlined">
                                 add_a_photo
