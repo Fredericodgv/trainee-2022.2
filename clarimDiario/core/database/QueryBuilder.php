@@ -32,7 +32,7 @@ class QueryBuilder
     public function remove($table, $id) {
 
         $sql = sprintf (
-            "DELETE FROM %s WHERE %s", $table, "id_users = :id" 
+            "DELETE FROM %s WHERE %s", $table, "id = :id" 
         );
 
         try { 
@@ -71,7 +71,7 @@ class QueryBuilder
 
     public function show($table, $id) {
         $sql = sprintf (
-            "SELECT Nome, Email, Senha FROM %s WHERE %s", $table, "id_users = :id"
+            "SELECT Nome, Email, Senha FROM %s WHERE %s", $table, "id = :id"
         );
 
         try { 

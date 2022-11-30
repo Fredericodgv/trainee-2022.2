@@ -126,11 +126,11 @@
 
                                         <h1>Modificar Usuário</h1>
                                         <p>Alterar Nome</p>
-                                        <input class="nome" type="text" id="nome_usuario" name="nome_usuario" placeholder= <?= $user->Nome ?>>
+                                        <input class="nome" type="text" id="nome_usuario" name="nome_usuario" value = <?= $user->Nome ?>>
                                         <p>Email</p>
-                                        <input class="email" type="email" id="email_usuario" name="email_usuario" placeholder= <?= $user->Email ?>>
+                                        <input class="email" type="email" id="email_usuario" name="email_usuario" value = <?= $user->Email ?>>
                                         <p>Senha</p>
-                                        <input class="senha" type="password" id="senha_usuario" name="senha_usuario" placeholder= <?= $user->Senha ?>>
+                                        <input class="senha" type="password" id="senha_usuario" name="senha_usuario" value = <?= $user->Senha ?>>
 
                                         <div class="btns">
                                             <button class="btn_close" type="button">
