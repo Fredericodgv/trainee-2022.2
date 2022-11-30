@@ -46,16 +46,23 @@ class QueryBuilder
         }
     }
 
-    public function update($table, $parameters) {
-        $sql = sprintf (
-            "UPDATE %s SET %s %s %s %s %s %s WHERE %s", $table, "Nome", $parameters['nome'], "Senha", $parameters['senha'], "Email", $parameters['email'], "id_users = :id"
+    public function edit($table, $id, $parameters) {
+        $sql = sprintf(
+            'UPDATE %s SET %s WHERE %s;',
+            $table,
+            implode(', ', array_map(function ($parameters){
+                return "{$parameters} = :{$parameters}";
+            }, array_keys($parameters))), 
+            'id = :id'
         );
 
-        try { 
-            $id = $parameters['id'];
-            $stat = $this->pdo->prepare($sql);
+        $parameters['id'] = $id;
 
-            $stat->execute($parameters, $id);
+        try { 
+
+            $stat = $this->pdo->prepare($sql);
+            
+            $stat->execute($parameters);
 
         } catch(Exception $e) {
             die($e->getMessage());

@@ -47,3 +47,39 @@ const altModal = function (id) { // ALTERA O STATUS DO MODAL ENTRE HIDE E NO-HID
 [...botoesModal, background_modal, ...botoesCloseModal, ...botoesSaveModal, ...botoesDeleteModal, botao_add, botao_add_confirm].forEach((botao) => { // ONCLICK EVENT
     botao.addEventListener("click", () => altModal(botao.dataset.modal))  
 });
+
+
+function iniciaModal(modalID) {
+    const modal = document.getElementById(modalID);  
+    modal.classList.add('hide');   
+    modal.addEventListener('click', (e) => {
+        
+        if(e.target.id == modalID || e.target.className == 'btn_close') {
+            modal.classList.remove('hide');
+        }
+    
+    });
+
+}
+
+    const add = document.querySelector('.add_btn');
+    add.addEventListener('click', function()  {
+        iniciaModal('modal-adicionar');
+    });
+
+    const del = document.querySelector('.aux_btn_info-usuario_del');
+    del.addEventListener('click', function()  {
+        iniciaModal('modal-deletar');
+    });
+
+    const editar = document.querySelector('.aux_btn_info-usuario_edit');
+    editar.addEventListener('click', function()  {
+        iniciaModal('modal-editar');
+    });
+    
+    const visualizar = document.querySelector('.aux_btn_info-usuario');
+    visualizar.addEventListener('click', function()  {
+        iniciaModal('modal-visualizar');
+    });
+
+    

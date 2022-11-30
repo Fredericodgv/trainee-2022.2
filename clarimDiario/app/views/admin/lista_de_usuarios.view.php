@@ -81,10 +81,10 @@
 
                 <?php foreach ( $variavel as $user ): ?>
                     <tr class="info-usuario">
-                        <th class="numero-usuario" scope="row"> <?= $user->id_users ?> </th>
+                        <th class="numero-usuario" scope="row"> <?= $user->id ?> </th>
                         <td class="nome-usuario"> <?= $user->Nome ?> </td>
                         <td class="functions-usuario">
-                            <button class="botao aux_btn_info-usuario" data-modal="modal_visualizar" role="button">
+                            <button class="botao aux_btn_info-usuario" data-modal="modal_visualizar_<?= $user->id ?>" role="button">
                                 <a>
                                     <i class="fa-solid fa-eye aux_icon"></i>
                                 </a>
@@ -92,10 +92,10 @@
 
 
                             <form action = "/admin/show" method="get" >
-                                <div class="aux_center hide" id="modal_visualizar">
+                                <div class="aux_center hide" id="modal_visualizar_<?= $user->id ?>">
                                     <div class="modal-content">
                                         <h1>Visualizar Usuário</h1>
-                                        <input type="hidden" value = "<?= $user->id_users ?>" name = "id" >
+                                        <input type="hidden" value = "<?= $user->id ?>" name = "id" >
 
                                         <p>Nome Completo</p>
                                         <input class="nome" type="text" id="nome_usuario" name="nome_usuario" placeholder= <?= $user->Nome ?> disabled>
@@ -113,16 +113,16 @@
                                 </div>
                             </form>
 
-                            <button class="botao aux_btn_info-usuario" data-modal="modal_editar" role="button">
+                            <button class="botao aux_btn_info-usuario" data-modal="modal_editar_<?= $user->id ?>" role="button">
                                 <a>
                                     <i class="fa-solid fa-pen-to-square aux_icon"></i>
                                 </a>
                             </button>
 
                             <form action="/admin/edit" method="post">
-                                <div class="aux_center hide" id="modal_editar">
+                                <div class="aux_center hide" id="modal_editar_<?= $user->id ?>">
                                     <div class="modal-content">
-                                    <input type="hidden" value = "<?= $user->id_users ?>" name = "id" >
+                                    <input type="hidden" value = "<?= $user->id ?>" name = "id" >
 
                                         <h1>Modificar Usuário</h1>
                                         <p>Alterar Nome</p>
@@ -145,7 +145,7 @@
                                 </div>
                             </form>
 
-                            <button class="botao aux_btn_info-usuario" data-modal="modal_deletar"
+                            <button class="botao aux_btn_info-usuario" data-modal="modal_deletar_<?= $user->id ?>"
                                 style="background-color: red;" role="button">
                                 <a>
                                     <i class="fa-solid fa-trash-can aux_icon"></i>
@@ -153,11 +153,11 @@
                             </button>
 
                             <form action="admin/delete" method="post">
-                                <div class="aux_center hide" id="modal_deletar">
+                                <div class="aux_center hide" id="modal_deletar_<?= $user->id ?>">
                                     <div class="modal-content">
                                         <h1>Deletar Usuário</h1>
                                         <p>Tem certeza que quer deletar esse usuário?</p>
-                                        <input type="hidden" value = "<?= $user->id_users ?>" name = "id" >
+                                        <input type="hidden" value = "<?= $user->id ?>" name = "id" >
 
                                         <div class="btns">
                                             <button class="btn_close" type="button">

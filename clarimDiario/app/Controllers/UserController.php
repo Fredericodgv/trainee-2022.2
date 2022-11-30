@@ -84,15 +84,15 @@ class UserController extends Controller
 
     // retorna a pagina para editar um elemento
     public function edit()
-    {
+    {     
         $id = $_POST['id'];
         $nome = $_POST['nome_usuario'];
         $email = $_POST['email_usuario'];
         $senha = $_POST['senha_usuario'];
 
-        App:get('database')->update('users', $id, $nome, $email, $senha);
+        App::get('database')->edit('users', $_POST['id'], compact('nome', 'email', 'senha'));
 
-        //return redirect('lista_de_usuarios');
+        return redirect('lista_de_usuarios');
 
     }
 
