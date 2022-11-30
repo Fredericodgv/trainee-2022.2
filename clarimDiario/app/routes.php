@@ -2,10 +2,6 @@
 
 use App\Core\Router;
 
-// Exemplo de Rota
-// $Router->get('/home', 'HomeController@index');
-// $Router->get('/posts', 'PostController@index');
-
 $router->get('lista_de_usuarios', 'UserController@index');
 
 $router->get('admin/show', 'UserController@show');
