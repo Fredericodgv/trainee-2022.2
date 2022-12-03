@@ -12,3 +12,4 @@ $router->post('admin/edit', 'UserController@edit');
 
 $router->post('admin/delete', 'UserController@delete');
 
+$router->get('login', 'LoginController@index');

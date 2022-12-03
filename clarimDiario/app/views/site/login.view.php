@@ -17,7 +17,10 @@
     </head>
 
     <body>
-        <section class="vh-100 gradient-custom">
+        
+    <form action="#" method="post">
+
+          <section class="vh-100 gradient-custom">
             <div class="container py-5 h-85">
               <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -29,21 +32,16 @@
                         <h2 class="fw-bold mb-2 text-uppercase">Login</h2><br>
 
                         <div class="form-outline form-white mb-4">
-                          <input required type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="Email"/>
+                          <input required type="email" name="login-email" id="typeEmailX" class="form-control form-control-lg" placeholder="Email"/>
                           <label class="form-label" for="typeEmailX"></label>
                         </div>
 
                         <div class="form-outline form-white mb-4">
-                          <input required type="password" id="typePasswordX" class="form-control form-control-lg" placeholder="Senha"/>
+                          <input required type="password" name="login-senha" id="typePasswordX" class="form-control form-control-lg" placeholder="Senha"/>
                           <label class="form-label" for="typePasswordX"></label>
                         </div>
 
                         <button class="entrar">Entrar</button><p></p>
-
-                        <div class = "relembrar">
-                            <span><input type="checkbox" style="margin:0; padding:0;height:13px"></span>
-                            <span>Lembre-se de mim</span><p></p>
-                        </div>
 
                         <div class="ajuda">
                             <a href="#">Precisa de ajuda?</a>
@@ -61,5 +59,8 @@
               </div>
             </div>
         </section>
+
+        </form>
+    
     </body>
 </html>
