@@ -80,6 +80,7 @@
                 <tbody>
 
                 <?php foreach ( $variavel as $user ): ?>
+                
                     <tr class="info-usuario">
                         <th class="numero-usuario" scope="row"> <?= $user->id ?> </th>
                         <td class="nome-usuario"> <?= $user->Nome ?> </td>
@@ -175,13 +176,14 @@
 
                         </td>
                     </tr>
-                <?php endforeach ?>
-                
+                <?php endforeach ?>                
                 </tbody>
             </table>
+            <?php require 'pagination.php'//'App/views/admin/includes/pagination.php';// ?>
         </div>
     </div>
 
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
