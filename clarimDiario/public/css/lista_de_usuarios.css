@@ -124,6 +124,14 @@ body {
     padding-top: 8px;
 }
 
+.pagination {
+    font-size: 20px;
+}
+
+.pagination a {
+    font-size: 30px;
+}
+
 @media (max-width: 1150px) {
     .logo{
         margin-top: 0;

@@ -3,7 +3,7 @@
 namespace App\Controllers;
 use App\Models\User;
 use App\Core\App;
-
+use Vendor\Illuminate\Pagination\Paginator;
 class UserController extends Controller
 {
     public function __construct()
@@ -18,8 +18,30 @@ class UserController extends Controller
     //retorna pagina principal
     public function index()
     {
-        $variavel = User::all();
-        return view('admin/lista_de_usuarios', compact('variavel'));
+        $page = 1;
+
+        if (isset($_GET['page']) && !empty(($_GET['page']))) {
+            $page = intval($_GET['page']);
+
+            if ($page < 1) { return redirect('lista_de_usuarios'); }
+        }
+
+        $users_per_page = 3;
+
+        $inicial_limit = $users_per_page * $page - $users_per_page;
+
+        $rows = App::get('database')->contador('users');
+
+        if ( $inicial_limit > $rows) { return redirect('lista_de_usuarios'); }
+
+        $total = ceil($rows / $users_per_page);
+        
+        $variavel = App::get('database')->selectPag('users', $inicial_limit, $users_per_page);
+
+        //  var_dump($total);
+        //  die();
+
+        return view('admin/lista_de_usuarios', compact('variavel', 'page', 'total'));
     }
 
     //retorna pagina individual de um elemento
@@ -111,4 +133,5 @@ class UserController extends Controller
 
         return redirect('lista_de_usuarios');
     }
+
 }
