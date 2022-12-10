@@ -95,7 +95,7 @@ class QueryBuilder
             $stat = $this->pdo->prepare($sql);
     
             $stat->execute();
-    
+
             return intval($stat->Fetch(PDO::FETCH_NUM)[0]);
 
         } catch(Exception $e) {
@@ -104,7 +104,7 @@ class QueryBuilder
     }
 
     public function selectPag($table, $inicial_limit, $rows) {
-        $sql = "SELECT * FROM $table LIMIT $inicial_limit, $rows";
+        $sql = "SELECT * FROM {$table} LIMIT {$inicial_limit}, {$rows}";
 
         try { 
             
@@ -112,10 +112,7 @@ class QueryBuilder
     
             $stat->execute();
     
-
-            //var_dump($stat->fetch(PDO::FETCH_NUM));
-           // die();
-            return $stat->fetch(PDO::FETCH_NUM);
+            return $stat->fetchAll(PDO::FETCH_OBJ);
 
         } catch(Exception $e) {
             die($e->getMessage());

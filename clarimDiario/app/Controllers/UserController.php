@@ -26,7 +26,7 @@ class UserController extends Controller
             if ($page < 1) { return redirect('lista_de_usuarios'); }
         }
 
-        $users_per_page = 2;
+        $users_per_page = 3;
 
         $inicial_limit = $users_per_page * $page - $users_per_page;
 
@@ -36,8 +36,11 @@ class UserController extends Controller
 
         $total = ceil($rows / $users_per_page);
         
-        $variavel [] = App::get('database')->selectPag('users', $inicial_limit, $rows);
-        
+        $variavel = App::get('database')->selectPag('users', $inicial_limit, $users_per_page);
+
+        //  var_dump($total);
+        //  die();
+
         return view('admin/lista_de_usuarios', compact('variavel', 'page', 'total'));
     }
 

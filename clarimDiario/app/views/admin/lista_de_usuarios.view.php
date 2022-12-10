@@ -82,10 +82,10 @@
                 <?php foreach ( $variavel as $user ): ?>
                 
                     <tr class="info-usuario">
-                        <th class="numero-usuario" scope="row"> <?= $user[0] ?> </th>
-                        <td class="nome-usuario"> <?= $user[1] ?> </td>
+                        <th class="numero-usuario" scope="row"> <?= $user->id ?> </th>
+                        <td class="nome-usuario"> <?= $user->Nome ?> </td>
                         <td class="functions-usuario">
-                            <button class="botao aux_btn_info-usuario" data-modal="modal_visualizar_<?= $user[0] ?>" role="button">
+                            <button class="botao aux_btn_info-usuario" data-modal="modal_visualizar_<?= $user->id ?>" role="button">
                                 <a>
                                     <i class="fa-solid fa-eye aux_icon"></i>
                                 </a>
@@ -93,17 +93,17 @@
 
 
                             <form action = "/admin/show" method="get" >
-                                <div class="aux_center hide" id="modal_visualizar_<?= $user[0] ?>">
+                                <div class="aux_center hide" id="modal_visualizar_<?= $user->id ?>">
                                     <div class="modal-content">
                                         <h1>Visualizar Usuário</h1>
-                                        <input type="hidden" value = "<?= $user[0] ?>" name = "id" >
+                                        <input type="hidden" value = "<?= $user->id ?>" name = "id" >
 
                                         <p>Nome Completo</p>
-                                        <input class="nome" type="text" id="nome_usuario" name="nome_usuario" placeholder= <?= $user[1] ?> disabled>
+                                        <input class="nome" type="text" id="nome_usuario" name="nome_usuario" placeholder= <?= $user->Nome ?> disabled>
                                         <p>Email</p>
-                                        <input class="email" type="email" id="email_usuario" name="email_usuario" placeholder= <?= $user[2] ?> disabled>
+                                        <input class="email" type="email" id="email_usuario" name="email_usuario" placeholder= <?= $user->Email ?> disabled>
                                         <p>Senha</p>
-                                        <input class="senha" type="password" id="senha_usuario" name="senha_usuario" placeholder= <?= $user[3] ?> disabled>
+                                        <input class="senha" type="password" id="senha_usuario" name="senha_usuario" placeholder= <?= $user->Senha ?> disabled>
 
                                         <div class="btns">
                                             <button class="botao btn_close" type="button">
@@ -114,24 +114,24 @@
                                 </div>
                             </form>
 
-                            <button class="botao aux_btn_info-usuario" data-modal="modal_editar_<?= $user[0] ?>" role="button">
+                            <button class="botao aux_btn_info-usuario" data-modal="modal_editar_<?= $user->id ?>" role="button">
                                 <a>
                                     <i class="fa-solid fa-pen-to-square aux_icon"></i>
                                 </a>
                             </button>
 
                             <form action="/admin/edit" method="post">
-                                <div class="aux_center hide" id="modal_editar_<?= $user[0] ?>">
+                                <div class="aux_center hide" id="modal_editar_<?= $user->id ?>">
                                     <div class="modal-content">
-                                    <input type="hidden" value = "<?= $user[0] ?>" name = "id" >
+                                    <input type="hidden" value = "<?= $user->id ?>" name = "id" >
 
                                         <h1>Modificar Usuário</h1>
                                         <p>Alterar Nome</p>
-                                        <input class="nome" type="text" id="nome_usuario" name="nome_usuario" value = <?= $user[1] ?>>
+                                        <input class="nome" type="text" id="nome_usuario" name="nome_usuario" value = <?= $user->Nome ?>>
                                         <p>Email</p>
-                                        <input class="email" type="email" id="email_usuario" name="email_usuario" value = <?= $user[2] ?>>
+                                        <input class="email" type="email" id="email_usuario" name="email_usuario" value = <?= $user->Email ?>>
                                         <p>Senha</p>
-                                        <input class="senha" type="password" id="senha_usuario" name="senha_usuario" value = <?= $user[3] ?>>
+                                        <input class="senha" type="password" id="senha_usuario" name="senha_usuario" value = <?= $user->Senha ?>>
 
                                         <div class="btns">
                                             <button class="btn_close" type="button">
@@ -146,7 +146,7 @@
                                 </div>
                             </form>
 
-                            <button class="botao aux_btn_info-usuario" data-modal="modal_deletar_<?= $user[0] ?>"
+                            <button class="botao aux_btn_info-usuario" data-modal="modal_deletar_<?= $user->id ?>"
                                 style="background-color: red;" role="button">
                                 <a>
                                     <i class="fa-solid fa-trash-can aux_icon"></i>
@@ -154,11 +154,11 @@
                             </button>
 
                             <form action="admin/delete" method="post">
-                                <div class="aux_center hide" id="modal_deletar_<?= $user[0] ?>">
+                                <div class="aux_center hide" id="modal_deletar_<?= $user->id ?>">
                                     <div class="modal-content">
                                         <h1>Deletar Usuário</h1>
                                         <p>Tem certeza que quer deletar esse usuário?</p>
-                                        <input type="hidden" value = "<?= $user[0] ?>" name = "id" >
+                                        <input type="hidden" value = "<?= $user->id ?>" name = "id" >
 
                                         <div class="btns">
                                             <button class="btn_close" type="button">
