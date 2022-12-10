@@ -17,59 +17,41 @@
 
 <body>
     <div class="container">
-
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <h1>Visualizar Publicação</h1>
-                </div>
-
-                <div class="input">
-
+    <div id="modal-view-<?php echo $post->id?>" class="modal-fade-view">
+              <div class="modal-main-view">
+                  <form action="posts" method="GET">
+                  <div class="modal-header-view">
+                    <h1>Visualizar Publicação <?php echo $post->id?> </h1>
+                  </div>
+                  <div class="input-view">
                     <p class="title-add">Título da publicação</p>
-
                     <div class="input-box">
-                        <input id="title" type="text" placeholder="Título da publicação" disabled>
+                      <input id="title" type="text" placeholder="<?php echo $post->titulo?>" disabled>
                     </div>
-
                     <p class="content-add">Conteúdo da publicação</p>
-
                     <div class="input-box">
-                        <input id="content" type="text" placeholder="Lorem" disabled>
+                      <input id="content" type="text" placeholder="<?php echo $post->conteudo?>" disabled>
                     </div>
-
-                    <p class="autor-add">Autor</p>
-
+                      <p class="autor-add">Autor</p>
                     <div class="input-box">
-                        <input id="autor" type="text" placeholder="Autor" disabled>
+                      <input id="autor" type="text" placeholder="<?php echo $post->autor?>" disabled>
                     </div>
-
                     <p class="date-add">Data</p>
-
                     <div class="input-box">
-                        <input id="date" type="date" disabled>
+                      <input id="date" type="text" placeholder="<?php echo $post->data_publicacao?>" disabled>
                     </div>
-
-                    <div class="input-view">
-                        <input id="imagem" type="file" accept="image/*" disabled>
-                        <label id="label" for="file">
-                            <span class="material-symbols-outlined">
-                                add_a_photo
-                            </span> &nbsp;
-                            Escolha uma Imagem
-                        </label>
+                    <div class="input-box">
+                      <input id="imagem" type="file" accept="image/*" placeholder="<?php echo $post->imagem?>" disabled>
                     </div>
-
-                </div>
-
-                <div class="aux-button">
-
+                  </div>
+                  <div class="modal-aux-button"> 
                     <div class="exit-button">
-                        <button>Sair</button>
+                      <button class="sair-botao" type="button">Sair</button>
                     </div>
-
-            </form>
-        </div>
+                  </div>
+                </form>
+              </div>
+            </div>
     </div>
 </body>
 

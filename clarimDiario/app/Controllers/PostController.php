@@ -20,8 +20,21 @@ class PostController extends Controller
     //retorna pagina principal
     public function index()
     {
+        if(!empty($_POST['key']))
+        {
+            $post = filter_input(INPUT_POST, 'key', FILTER_SANITIZE_SPECIAL_CHARS);
+
+            $posts = App::get('database')->buscar($post);
+            //paginacao...
+
+            return view('admin/admin_lista_de_posts', compact('posts')); 
+
+        }
+
         $posts = Post::all();
-        return view('admin/admin_lista_de_posts', compact('posts'));
+
+        return view('admin/admin_lista_de_posts', compact('posts')); //'vari'
+
     }
 
     //retorna pagina individual de um elemento
@@ -43,7 +56,7 @@ class PostController extends Controller
 
         App::get('database')->insert('posts', compact('titulo', 'conteudo', 'imagem', 'data_publicacao', 'autor'));
 
-        return redirect('posts');
+        return redirect('admin/posts');
     }
 
     // valida e armazena os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
@@ -101,8 +114,7 @@ class PostController extends Controller
 
         App::get('database')->edit('posts', $_POST['id'], compact('titulo', 'conteudo', 'imagem', 'data_publicacao', 'autor'));
 
-        return redirect('posts');
-
+        return redirect('admin/posts');
     }
 
     // deleta um elemento e redireciona para alguma rota
@@ -113,6 +125,7 @@ class PostController extends Controller
 
         App::get('database')->delete('posts', $id);
 
-        return redirect('posts');
+        return redirect('admin/posts');
     }
+
 }

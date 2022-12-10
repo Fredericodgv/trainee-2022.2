@@ -24,12 +24,14 @@
 
 <header>
 
-  <form action="" class="search-bar-top">
-    <input type="text" placeholder="Pesquisar">
-    <button type="submit"><span class="material-symbols-outlined">
+<!--PESQUISAR-->
+  <form action="admin/posts" method="post" class="search-bar-top">
+    <input type="text" name = "key" placeholder="Pesquisar">
+    <button type="submit" value="Submit" id="" name="submit"><span class="material-symbols-outlined">
         search
       </span></button>
   </form>
+<!--PESQUISAR-->
 
   <!--botao de adicionar-->
   <div class="aux-button">
@@ -86,15 +88,20 @@
         <th scope="col" class="col-sm-2">Autor</th>
         <th scope="col" class="col-sm-1">Data</th>
         <th scope="col">
-          <form action="" class="search-bar">
-            <input type="text" placeholder="Pesquisar">
-            <button type="submit"><span class="material-symbols-outlined">
+
+<!--PESQUISAR-->
+
+          <form action="" method="post" class="search-bar">
+            <input type="text" placeholder="Pesquisar" name = "key" value="">
+            <button type="submit" value="Submit" name="submit" id=""><span class="material-symbols-outlined">
                 search
               </span></button>
           </form>
         </th>
       </tr>
     </thead>
+
+  <!--PESQUISAR-->
     
     <tbody>
 
