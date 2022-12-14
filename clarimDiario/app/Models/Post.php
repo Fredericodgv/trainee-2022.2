@@ -8,11 +8,11 @@ class Post Extends Model
 {
 
     protected $fillable = [
-        'title',
-        'content',
-        'image',
-        'created_at',
-        'author'
+        'titulo',
+        'conteudo',
+        'imagem',
+        'data_publicacao',
+        'autor'
     ];
 
 }
