@@ -25,22 +25,22 @@
         
             <header>Clarim Diário</header>
 
-            <a href="#" class="active dashboard">
+            <a href="/dashboard" class="active dashboard">
                 <i class="fa-solid fa-chart-line"></i>
                 <span>Dashboard</span>
             </a>
         
-            <a href="#" class="aux-li">
+            <a href="/lista_de_posts" class="aux-li">
                 <i class="fa-solid fa-eye"></i>
                 <span>Publicações</span>
             </a>
         
-            <a href="#" class="aux-li">
+            <a href="/lista_de_usuarios" class="aux-li">
                 <i class="fa-solid fa-users"></i>
                 <span>Usuários</span>
             </a>
         
-            <a href="#" class="aux-li">
+            <a href="/login/logout" class="aux-li">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 <span class="logout">Logout</span>
             </a>    

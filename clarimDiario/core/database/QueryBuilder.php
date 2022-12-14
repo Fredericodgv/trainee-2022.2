@@ -119,4 +119,26 @@ class QueryBuilder
         }
     }
 
+    public function buscar_users($busca)
+    {
+        $sql = sprintf( 
+            'SELECT * FROM users WHERE %s;',
+            "Email like :busca"
+        );
+        
+            try {
+                $statement = $this->pdo->prepare($sql);
+                $statement->execute(compact ('busca'));
+
+                $result = $statement->fetchAll(PDO::FETCH_OBJ);
+                
+                return $result;
+
+            }
+            catch (Exception $e){
+                die("An error occurred when trying to search on database: {$e->getMessage()}");
+            }
+
+    }
+
 }

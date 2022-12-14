@@ -15,6 +15,8 @@
 
 <body>
 
+<?php include 'App/views/admin/sidebar.php' ?>
+
     <div class="d-flex logo">
 
         <img src="../../../public/img/logo.png">

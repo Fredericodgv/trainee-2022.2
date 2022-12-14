@@ -23,16 +23,13 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">HOME</a>
+                <a class="nav-link" aria-current="page" href="/landing_page">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">NOTÍCIAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTATO</a>
+                <a class="nav-link" href="/lista_de_posts">NOTÍCIAS</a>
               </li>
               <li class="nav-item-login">
-                <a class="nav-link" href="#">LOGIN</a>
+                <a class="nav-link" href="/login">LOGIN</a>
               </li>
             </ul>
           </div>
@@ -56,8 +53,7 @@
                   <div class="col-md-5 col-12">
                     <!-- Email input -->
                     <div class="form-outline form-white mb-4">
-                      <input type="email" id="form5Example2" class="form-control" />
-                      <label class="form-label" for="form5Example2">Endereço de email</label>
+                      <input type="email" id="form5Example2" class="form-control" placeholder="Endereço de email"/>
                     </div>
                   </div>
                   <!--Grid column-->
@@ -90,16 +86,13 @@
                   <p></p><p></p><p></p>
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="#!" class="text-white">Home</a>
+                      <a href="/landing_page" class="text-white">Home</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">Notícias</a>
+                      <a href="/lista_de_posts" class="text-white">Notícias</a>
                     </li>
                     <li>
-                      <a href="#!" class="text-white">Contato</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Login</a>
+                      <a href="/login" class="text-white">Login</a>
                     </li>
                   </ul>
                 </div>                
@@ -116,9 +109,7 @@
           <!-- Grid container -->
           <!-- Copyright -->
           <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © Copyright: 
-               <a class="text-white" href="#">Clarim Diario</a>,
-               2022.
+               <p class="text-white">© Clarim Diario</p>
           </div>
           <!-- Copyright -->
       </footer>

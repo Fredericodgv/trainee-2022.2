@@ -39,6 +39,8 @@
 
 <body>
 
+<?php include 'App/views/admin/sidebar.php' ?>
+
   <table class="table caption-top table-hover">
     <thead>
       <tr class="aux-tr">

@@ -3,13 +3,28 @@
 namespace App\Controllers;
 class HomeController extends Controller
 {
-    public function __construct()
+    public function landingPage()
     {
-        parent::__construct();
-        // if(!isset($_SESSION['logado'])) {
-        //     return redirect('login');
-        //     exit();
-        // }
+        return view('site/landing_page');
     }
 
+    public function listaPosts()
+    {
+        return view('site/lista_de_posts');
+    }
+
+    public function postIndividual()
+    {
+        return view('site/post-individual');
+    }
+
+    public function navbar() 
+    {
+        return view('site/navbar_footer');
+    }
+
+    public function sidebar()
+    {
+        return view('admin/sidebar');
+    }
 }
