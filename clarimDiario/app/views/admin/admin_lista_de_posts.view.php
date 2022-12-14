@@ -22,6 +22,8 @@
   <img src="../../../public/assets/logoCompleta.png">
 </div>
 
+ 
+
 <header>
 
 <!--PESQUISAR-->
@@ -89,7 +91,7 @@
         <th scope="col" class="col-sm-1">Data</th>
         <th scope="col">
 
-<!--PESQUISAR-->
+  <!--PESQUISAR-->
 
           <form action="" method="post" class="search-bar">
             <input type="text" placeholder="Pesquisar" name = "key" value="">
@@ -106,7 +108,7 @@
     <tbody>
 
      <?php foreach($posts as $post): ?>
-
+      
       <tr class="aux-tr1">
         <th scope="row"> <?php echo $post->id?> </th>
         <td data-title="Título:"><?php echo $post->titulo ?></td>
@@ -143,8 +145,8 @@
                     <div class="input-box">
                       <input id="date" type="text" placeholder="<?php echo $post->data_publicacao?>" disabled>
                     </div>
-                    <div class="input-box">
-                      <input id="imagem" type="file" accept="image/*" placeholder="<?php echo $post->imagem?>" disabled>
+                    <div class="input-box"><p>Imagem</p>
+                      <input id="imagem" type="image" accept="image/*" placeholder="<?php echo $post->imagem?>" disabled>
                     </div>
                   </div>
                   <div class="modal-aux-button"> 

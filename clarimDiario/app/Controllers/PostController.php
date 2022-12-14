@@ -40,6 +40,12 @@ class PostController extends Controller
     //retorna pagina individual de um elemento
     public function show()
     {
+        
+        //$id = $_GET['id'];
+
+        //return view('site/post-individual', compact('postindiv'));
+
+        
         //$id = "validação da variavel global $_GET no indice que você quiser. Por exemplo $_GET['id']. Preferenciamentel coloque o campo de identificação do usuario com o nome de id"
         //$exemplo = App\Models\Exemplo::find($id);
         //return view('...', compact("exemplo"))

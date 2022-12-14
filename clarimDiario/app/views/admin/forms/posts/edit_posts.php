@@ -14,42 +14,30 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Admin - Editar Publicação</title>
 </head>
-
 <body>
     <div class="container">
-
         <div class="form">
             <form action="#">
                 <div class="form-header">
                     <h1>Editar Publicação</h1>
                 </div>
-
                 <div class="input">
-
                     <p class="title-add">Título da publicação</p>
-
                     <div class="input-box">
                         <input id="title" type="text" placeholder="Novo título" required>
                     </div>
-
                     <p class="content-add">Conteúdo da publicação</p>
-
                     <div class="input-box">
                         <input id="content" type="text" placeholder="Novo texto" required>
                     </div>
-
                     <p class="autor-add">Autor</p>
-
                     <div class="input-box">
                         <input id="autor" type="text" placeholder="Autor" required>
                     </div>
-
                     <p class="date-add">Data</p>
-
                     <div class="input-box">
                         <input id="date" type="date" required>
                     </div>
-
                     <div class="input-box">
                         <input id="imagem" type="file" accept="image/*" required>
                         <label for="file">
@@ -59,24 +47,16 @@
                             Escolha uma Imagem
                         </label>
                     </div>
-
                 </div>
-
                 <div class="aux-button">
-
                     <div class="exit-button">
                         <button>Sair</button>
                     </div>
-
                     <div class="add-button">
                         <button>Atualizar</button>
                     </div>
-
-
-
             </form>
         </div>
     </div>
 </body>
-
 </html>
