@@ -1,6 +1,8 @@
 <?php
 
+use App\Controllers\PostController;
 use App\Core\Router;
+$router->get('admin/posts', 'PostController@index');
 
 //rotas gerais
 

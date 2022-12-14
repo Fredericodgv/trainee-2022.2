@@ -12,70 +12,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Admin - Editar Publicação</title>
+    <title>Admin - Visualizar Publicação</title>
 </head>
 
 <body>
     <div class="container">
-
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <h1>Editar Publicação</h1>
-                </div>
-
-                <div class="input">
-
+    <div id="modal-view-<?php echo $post->id?>" class="modal-fade-view">
+              <div class="modal-main-view">
+                  <form action="posts" method="GET">
+                  <div class="modal-header-view">
+                    <h1>Visualizar Publicação <?php echo $post->id?> </h1>
+                  </div>
+                  <div class="input-view">
                     <p class="title-add">Título da publicação</p>
-
                     <div class="input-box">
-                        <input id="title" type="text" placeholder="Novo título" required>
+                      <input id="title" type="text" placeholder="<?php echo $post->titulo?>" disabled>
                     </div>
-
                     <p class="content-add">Conteúdo da publicação</p>
-
                     <div class="input-box">
-                        <input id="content" type="text" placeholder="Novo texto" required>
+                      <input id="content" type="text" placeholder="<?php echo $post->conteudo?>" disabled>
                     </div>
-
-                    <p class="autor-add">Autor</p>
-
+                      <p class="autor-add">Autor</p>
                     <div class="input-box">
-                        <input id="autor" type="text" placeholder="Autor" required>
+                      <input id="autor" type="text" placeholder="<?php echo $post->autor?>" disabled>
                     </div>
-
                     <p class="date-add">Data</p>
-
                     <div class="input-box">
-                        <input id="date" type="date" required>
+                      <input id="date" type="text" placeholder="<?php echo $post->data_publicacao?>" disabled>
                     </div>
-
                     <div class="input-box">
-                        <input id="imagem" type="file" accept="image/*" required>
-                        <label for="file">
-                            <span class="material-symbols-outlined">
-                                add_a_photo
-                            </span> &nbsp;
-                            Escolha uma Imagem
-                        </label>
+                      <input id="imagem" type="file" accept="image/*" placeholder="<?php echo $post->imagem?>" disabled>
                     </div>
-
-                </div>
-
-                <div class="aux-button">
-
+                  </div>
+                  <div class="modal-aux-button"> 
                     <div class="exit-button">
-                        <button>Sair</button>
+                      <button class="sair-botao" type="button">Sair</button>
                     </div>
-
-                    <div class="add-button">
-                        <button>Atualizar</button>
-                    </div>
-
-
-
-            </form>
-        </div>
+                  </div>
+                </form>
+              </div>
+            </div>
     </div>
 </body>
 

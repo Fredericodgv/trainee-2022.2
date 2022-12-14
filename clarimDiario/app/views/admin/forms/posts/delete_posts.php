@@ -12,35 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <title>Admin - Excluir Publicação</title>
 </head>
-
 <body>
     <div class="container">
-
         <div class="form form-delete">
-            <form action="#">
+            <form action="../posts/delete_posts.php" method="POST">
                 <div class="form-header-delete">
                     <h1>Excluir Publicação</h1>
                 </div>
-
                 <div class="input-delete">
                     <p class="title-add">Tem certeza que deseja excluir a publicação?</p>
                 </div>
-
                 <div class="aux-button-delete">
-
                     <div class="exit-button-delete">
                         <button>Cancelar</button>
                     </div>
-
                     <div class="add-button-delete">
                         <button>Excluir</button>
                     </div>
-
-
-
             </form>
         </div>
     </div>
 </body>
-
 </html>
