@@ -2,11 +2,7 @@
 
 use App\Controllers\PostController;
 use App\Core\Router;
-//
 $router->get('admin/posts', 'PostController@index');
-// Exemplo de Rota
-// $Router->get('/home', 'HomeController@index');
-//               define url, controler@funcaodentrodele
 
 //passando dados da view para o banco de dados
 $router->post('admin/posts/create', 'PostController@create');
@@ -17,5 +13,6 @@ $router->post('admin/posts/delete', 'PostController@delete');
 //editar o usuario, passando seus dados e id
 $router->post('admin/posts/update', 'PostController@update');
 
+//relacionada a pesquisa
 $router->post('admin/posts', 'PostController@index');
 

@@ -16,18 +16,18 @@ class QueryBuilder
     public function selectAll($table)
     {
         $sql = "select * from ($table)";
-
+        
         try{
             $stat = $this->pdo->prepare($sql);
-
+            
             $stat->execute();
-
+            
             return $stat->selectAll(PDO::FETCH_CLASS);
         }catch(Exception $e){
             die($e->getMessage());
         }
     }
-
+    
     public function insert($table, $parametros)
     {
         $sql = sprintf(
@@ -45,7 +45,7 @@ class QueryBuilder
             die("An error ocurred when trying to insert into database: {$e->getMessage()}");
         }
     }
-
+    
     public function delete($table, $id)
     {
         $sql = sprintf(
@@ -105,6 +105,41 @@ class QueryBuilder
                 die("An error occurred when trying to search on database: {$e->getMessage()}");
             }
 
+    }
+
+    public function remove($table, $id) {
+
+        $sql = sprintf (
+            "DELETE FROM %s WHERE %s", $table, "id = :id" 
+        );
+
+        try { 
+      
+            $stat = $this->pdo->prepare($sql);
+
+            $stat->execute($id);
+
+        } catch(Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+
+
+    public function show($table, $id) {
+        $sql = sprintf (
+            "SELECT Nome, Email, Senha FROM %s WHERE %s", $table, "id = :id"
+        );
+
+        try { 
+            
+            $stat = $this->pdo->prepare($sql);
+
+            $stat->execute($id);
+
+        } catch(Exception $e) {
+            die($e->getMessage());
+        }
     }
 
 }
