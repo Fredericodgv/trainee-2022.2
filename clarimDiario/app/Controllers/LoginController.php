@@ -16,7 +16,7 @@ class LoginController extends Controller
 
     public function index()
     {
-        if($_SESSION) 
+        if(!empty($_SESSION['logado']))
         {
             return redirect('dashboard');
         }

@@ -6,14 +6,14 @@ use App\Core\App;
 use Vendor\Illuminate\Pagination\Paginator;
 class UserController extends Controller
 {
-    public function __construct()
-    {
-        parent::__construct();
-        if(!isset($_SESSION['logado'])) {
-            return redirect('login');
-            exit();
-        }
-    }
+   // public function __construct()
+   // {
+   //     parent::__construct();
+   //     if(!isset($_SESSION['logado'])) {
+   //         return redirect('login');
+   //         exit();
+   //     }
+  //  }
 
     //retorna pagina principal
     public function index()
