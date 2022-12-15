@@ -5,6 +5,7 @@ use App\Core\Router;
 //$router->get('admin/posts', 'PostController@index');
 
 //rotas gerais
+$router->get('', 'HomeController@landingPage');
 
 $router->get('landing_page', 'HomeController@landingPage');
 
