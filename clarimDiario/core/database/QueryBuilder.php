@@ -198,4 +198,26 @@ class QueryBuilder
 
     }
 
+    public function buscar_postsID($busca)
+    {
+        $sql = sprintf( 
+            'SELECT * FROM posts WHERE %s;',
+            "id like :busca"
+        );
+        
+            try {
+                $statement = $this->pdo->prepare($sql);
+                $statement->execute(compact ('busca'));
+
+                $result = $statement->fetch(PDO::FETCH_OBJ);
+                
+                return $result;
+
+            }
+            catch (Exception $e){
+                die("An error occurred when trying to search on database: {$e->getMessage()}");
+            }
+
+    }
+
 }

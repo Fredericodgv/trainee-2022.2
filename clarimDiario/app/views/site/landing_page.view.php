@@ -46,78 +46,23 @@
     <!--Inicio dos Cards-->
     
     <div class="cards">
-    
-  <aside class="aside-cards">
+    <aside class="aside-cards">
+    <?php foreach ($posts1 as $post): ?>
     <div class="card mb-3 aux-cards" style="max-width: 900px;">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="../../../public/img/News.jpg" class="img-fluid rounded-start aux-img" alt="...">
+          <img src="../../../public/img/<?=$post->imagem?>" class="img-fluid rounded-start aux-img" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body aux-struct">
-            <h5 class="card-title">Título do seu post!</h5>
-            <p class="card-text aux-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum ad facere quam, voluptatibus possimus a quisquam, soluta harum expedita optio ex eum modi nisi quas deleniti! Accusantium, sint quam!</p>
-            <p class="card-text aux-dmy"><small class="text-muted">Data do seu post!</small></p>
+            <h5 class="card-title"><?=$post->titulo?></h5>
+            <p class="card-text aux-text"><?=$post->conteudo?></p>
+            <p class="card-text aux-dmy"><small class="text-muted"><?=$post->autor?></small></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="card mb-3 aux-cards" style="max-width: 900px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../../../public/img/News.jpg" class="img-fluid rounded-start aux-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body aux-struct">
-            <h5 class="card-title">Título do seu post!</h5>
-            <p class="card-text aux-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum ad facere quam, voluptatibus possimus a quisquam, soluta harum expedita optio ex eum modi nisi quas deleniti! Accusantium, sint quam!</p>
-            <p class="card-text aux-dmy"><small class="text-muted">Data do seu post!</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3 aux-cards" style="max-width: 900px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../../../public/img/News.jpg" class="img-fluid rounded-start aux-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body aux-struct">
-            <h5 class="card-title">Título do seu post!</h5>
-            <p class="card-text aux-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum ad facere quam, voluptatibus possimus a quisquam, soluta harum expedita optio ex eum modi nisi quas deleniti! Accusantium, sint quam!</p>
-            <p class="card-text aux-dmy"><small class="text-muted">Data do seu post!</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3 aux-cards" style="max-width: 900px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../../../public/img/News.jpg" class="img-fluid rounded-start aux-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body aux-struct">
-            <h5 class="card-title">Título do seu post!</h5>
-            <p class="card-text aux-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum ad facere quam, voluptatibus possimus a quisquam, soluta harum expedita optio ex eum modi nisi quas deleniti! Accusantium, sint quam!</p>
-            <p class="card-text aux-dmy"><small class="text-muted">Data do seu post!</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mb-3 aux-cards" style="max-width: 900px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../../../public/img/News.jpg" class="img-fluid rounded-start aux-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body aux-struct">
-            <h5 class="card-title">Título do seu post!</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum ad facere quam, voluptatibus possimus a quisquam, soluta harum expedita optio ex eum modi nisi quas deleniti! Accusantium, sint quam!</p>
-            <p class="card-text aux-dmy"><small class="text-muted">Data do seu post!</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <?php endforeach; ?>
   </aside>
   
   <!--Final dos Cards-->

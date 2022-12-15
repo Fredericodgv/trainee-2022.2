@@ -25,114 +25,38 @@
 
     <nav class="navbar aux_nav">
         <div class="container-fluid ">
-            <form class="d-flex aux_container" role="search">
-                    <input class="form-control me-2 aux_form" type="search" placeholder="Nome do post..."
+            <form action = "lista_de_posts" method = "post" class="d-flex aux_container" role="search">
+                    <input class="form-control me-2 aux_form" type="text" name = "key" placeholder="Nome do post..."
                     aria-label="Search">
-                    <button class="btn btn-primary aux_btn_nav" type="submit">Procurar</button>
+                    <button class="btn btn-primary aux_btn_nav" type="submit" value="Submit" id="" name="submit">Procurar</button>
             </form>
         </div>
     </nav>
 
     <div class="identidade-lista-de-posts">
-
+    
+    <?php foreach($posts1 as $post): ?>
+        <?var_dump($post);?>
         <div class="board">
-
             <div class="d-flex p-2 flex-column">
-
                 <div class="card aux_cards">
                     <div class="img-post">
-                        <a href="#"><img src="../../../public/img/post-1.jpg" class="card-img-top"></a>
+                        <a href="#"><img src="../../../public/img/<?php echo $post->imagem ?>" class="card-img-top"></a>
                     </div>
                     <div class="card-body aux_card-body">
-                        <h5 class="card-title aux_card-title">O título do Post!</h5>
+                        <h5 class="card-title aux_card-title"><?php echo $post->titulo ?></h5>
                         <div class="aux_card-text card-text">
-                            <p>Uma breve descrição sobre o assunto principal do post!</p>
+                            <p><?php echo $post->conteudo?></p>
                             <div class="container">
-                                <a href="#" class="btn btn-primary aux_btn">Saiba Mais</a>
+                                <a href="post_individual?id=<?php echo $post->id?>" class="btn btn-primary aux_btn">Saiba Mais</a>
                             </div>
                         </div>                   
                     </div>
                 </div>
-
-                <div class="card aux_cards">
-                    <div class="img-post">
-                        <a href="#"><img src="../../../public/img/post-1.jpg" class="card-img-top"></a>
-                    </div>
-                    <div class="card-body aux_card-body">
-                        <h5 class="card-title aux_card-title">O título do Post!</h5>
-                        <div class="aux_card-text card-text">
-                            <p>Uma breve descrição sobre o assunto principal do post!</p>
-                            <div class="container">
-                                <a href="#" class="btn btn-primary aux_btn">Saiba Mais</a>
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-
-                <div class="card aux_cards">
-                    <div class="img-post">
-                        <a href="#"><img src="../../../public/img/post-1.jpg" class="card-img-top"></a>
-                    </div>
-                    <div class="card-body aux_card-body">
-                        <h5 class="card-title aux_card-title">O título do Post!</h5>
-                        <div class="aux_card-text card-text">
-                            <p>Uma breve descrição sobre o assunto principal do post!</p>
-                            <div class="container">
-                                <a href="#" class="btn btn-primary aux_btn">Saiba Mais</a>
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-
-                <div class="card aux_cards">
-                    <div class="img-post">
-                        <a href="#"><img src="../../../public/img/post-1.jpg" class="card-img-top"></a>
-                    </div>
-                    <div class="card-body aux_card-body">
-                        <h5 class="card-title aux_card-title">O título do Post!</h5>
-                        <div class="aux_card-text card-text">
-                            <p>Uma breve descrição sobre o assunto principal do post!</p>
-                            <div class="container">
-                                <a href="#" class="btn btn-primary aux_btn">Saiba Mais</a>
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-
-                <div class="card aux_cards">
-                    <div class="img-post">
-                        <a href="#"><img src="../../../public/img/post-1.jpg" class="card-img-top"></a>
-                    </div>
-                    <div class="card-body aux_card-body">
-                        <h5 class="card-title aux_card-title">O título do Post!</h5>
-                        <div class="aux_card-text card-text">
-                            <p>Uma breve descrição sobre o assunto principal do post!</p>
-                            <div class="container">
-                                <a href="#" class="btn btn-primary aux_btn">Saiba Mais</a>
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-
-                <div class="card aux_cards">
-                    <div class="img-post">
-                        <a href="#"><img src="../../../public/img/post-1.jpg" class="card-img-top"></a>
-                    </div>
-                    <div class="card-body aux_card-body">
-                        <h5 class="card-title aux_card-title">O título do Post!</h5>
-                        <div class="aux_card-text card-text">
-                            <p>Uma breve descrição sobre o assunto principal do post!</p>
-                            <div class="container">
-                                <a href="#" class="btn btn-primary aux_btn">Saiba Mais</a>
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-
-                
-
             </div>
         </div>
+
+    <?php endforeach; ?>
 
         <?php include 'App/views/site/footer.php' ?>
 
