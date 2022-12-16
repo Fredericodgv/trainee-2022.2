@@ -148,8 +148,9 @@
                     <div class="input-box">
                       <input id="date" type="text" placeholder="<?php echo $post->data_publicacao?>" disabled>
                     </div>
-                    <div class="input-box"><p>Imagem</p>
-                      <input id="imagem" type="image" accept="image/*" placeholder="<?php echo $post->imagem?>" disabled>
+                    <div class="input-box"><p>Miniatura da Imagem</p>
+                      <!--<input id="imagem" type="image" accept="image/*" disabled>-->
+                      <img class="foto" width="13%" src="../../../public/img/<?php echo $post->imagem ?>">
                     </div>
                   </div>
                   <div class="modal-aux-button"> 
