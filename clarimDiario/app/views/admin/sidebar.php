@@ -30,7 +30,7 @@
                 <span>Dashboard</span>
             </a>
         
-            <a href="/lista_de_posts" class="aux-li">
+            <a href="/admin/posts" class="aux-li">
                 <i class="fa-solid fa-eye"></i>
                 <span>Publicações</span>
             </a>
