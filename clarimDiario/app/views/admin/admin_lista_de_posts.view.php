@@ -17,17 +17,20 @@
   <script src="../../../public/js/admin_lista_de_posts.js" defer></script>
   <title>Admin - Publicações</title>
 </head>
-
-<div class="logo">
-  <img src="../../../public/assets/logoCompleta.png">
-</div>
-
  
+
+
+
+
+<body>
+
+<?php include 'App/views/admin/sidebar.php' ?>
 
 <header>
 
-<!--PESQUISAR-->
-  <form action="admin/posts" method="post" class="search-bar-top">
+<!--PESQUISAR-->  
+
+<form action="admin/posts" method="post" class="search-bar-top">
     <input type="text" name = "key" placeholder="Pesquisar">
     <button type="submit" value="Submit" id="" name="submit"><span class="material-symbols-outlined">
         search
@@ -36,6 +39,7 @@
 <!--PESQUISAR-->
 
   <!--botao de adicionar-->
+
   <div class="aux-button">
     <button class="adicionar-button">Adicionar Publicação</button>
   </div>
@@ -79,11 +83,8 @@
       </form>
     </div>
   </div>
+
 </header>
-
-<body>
-
-<?php include 'App/views/admin/sidebar.php' ?>
 
   <table class="table caption-top table-hover">
     <thead>

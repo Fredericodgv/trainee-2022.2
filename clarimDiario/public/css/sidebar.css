@@ -1,9 +1,9 @@
 body {
   font-family: 'Oswald', sans-serif;
+  background-color: black;
 }
 
 * {
-  margin: 0;
   padding: 0;
   text-decoration: none;
 }
@@ -32,6 +32,7 @@ body {
   transition: all .5s ease;
 }
 .sidebar header {
+  justify-content: center;
   font-size: 55px;
   line-height: 110px;
   text-align: center;
@@ -73,7 +74,7 @@ pointer-events: visibleStroke;
   margin-top: 0;
 }
 
-a:hover {
+.aux-li:hover {
   border-left: 5px solid red;
   background-color: rgb(255, 192, 0);
   text-decoration: none;

@@ -24,8 +24,8 @@
         <div class="sidebar">
         
             <header>Clarim Diário</header>
-
-            <a href="/dashboard" class="active dashboard">
+        
+            <a href="/dashboard" class="aux-li">
                 <i class="fa-solid fa-chart-line"></i>
                 <span>Dashboard</span>
             </a>
