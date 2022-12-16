@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light " >
+        <div class="container-fluid" style="height: auto;">
           <a class="navbar-brand" href="#">
             <img height="34px" width="100%" src="../../../public/img/textLogo.png" alt="Logo Clarim Diario" class="d-inline-block align-text-top"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

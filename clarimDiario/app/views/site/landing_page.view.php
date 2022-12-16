@@ -15,13 +15,11 @@
 
 
   <body>
-      
-  <?php include 'App/views/site/navbar.php' ?>
+    <div class="navbaraux">
 
-      <div class="d-flex logo">
-        <img src="../../../public/assets/logoCompleta.png">
-      </div>
-    
+    <?php include 'App/views/site/navbar.php' ?>
+
+    </div>
 
     <main class="principal">
         

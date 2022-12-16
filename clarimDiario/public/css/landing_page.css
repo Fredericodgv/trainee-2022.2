@@ -2,9 +2,15 @@ html, body {
     background-color: black;
     color: white;
     font-family: 'Oswald', sans-serif;
-    max-width: 95%;
     margin: 0 auto;
-    padding: 15px;
+    
+}
+
+.navbaraux {
+    width: 100%;
+    left: 0;
+    margin: 0;
+
 }
 
 .logo {
@@ -15,10 +21,12 @@ html, body {
 
     animation-name: opacidade;
     animation-duration: 5s;
+
+    width: 100%;
 }
 
 .logo img {
-    width: 100%;
+    width: 90%;
 }
 
 main {
@@ -32,10 +40,13 @@ main {
 
 .principal {
     background-color: #d91e1e;
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding: 3rem;
     border-radius: 25px;
+
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .manchete {
@@ -127,10 +138,14 @@ main {
     display: flex;
     flex-direction: row;
     background-color: red;
-    width: 100%;
+    width: 90%;
     border-radius: 50px;
     animation-name: opacidade;
     animation-duration: 5s;
+
+    
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .aux-cards {
