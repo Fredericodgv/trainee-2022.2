@@ -1,4 +1,4 @@
-<footer class=" text-center text-white" style="background-color:#000000;">
+<footer class=" text-center text-white" style="background-color:#000000; font-size:14px; ">
         <!-- Grid container -->
         <div class="container p-4">
           <!-- Section: Form -->
@@ -14,7 +14,7 @@
                   <div class="col-md-5 col-12">
                     <!-- Email input -->
                     <div class="form-outline form-white mb-4">
-                      <input type="email" id="form5Example2" class="form-control" placeholder="Endereço de email"/>
+                      <input type="email" id="form5Example2" class="form-control" style="width: 30%" placeholder="Endereço de email"/>
                     </div>
                   </div>
                   <!--Grid column-->

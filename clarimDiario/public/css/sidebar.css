@@ -1,26 +1,6 @@
 body {
   font-family: 'Oswald', sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-.sidebar header {
-  width: 100%;
-}
-
-.logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-.sidebar img {
-  width: 60%;
+  background-color: #000000;
 }
 
 .sidebar {
@@ -34,6 +14,7 @@ body {
 .sidebar header {
   font-size: 55px;
   line-height: 110px;
+  padding-right: 50px;
   text-align: center;
   background: #ff000069;
   user-select: none;
@@ -58,6 +39,11 @@ body {
   pointer-events: none;
 }
 
+.box {
+  position: fixed;
+  left: 0;
+}
+
 .sidebar a i {
 font-size: 30px;
 margin-right: 10px;
@@ -73,7 +59,7 @@ pointer-events: visibleStroke;
   margin-top: 0;
 }
 
-a:hover {
+  a:hover {
   border-left: 5px solid red;
   background-color: rgb(255, 192, 0);
   text-decoration: none;
@@ -85,7 +71,7 @@ a:link { text-decoration: none; }
   display: none;
 }
 
-label #btn,label #cancel {
+ label #btn,label #cancel {
   background: #ff0000;
   position: absolute;
   cursor: pointer;
@@ -100,10 +86,11 @@ label #btn,label #cancel {
   line-height: 55px;
 
   transition: all .5s ease;
-}
+} 
 
-label #cancel {
-  opacity: 0;
+ label #cancel {
+  left: 0;
+  opacity: 1;
   visibility: hidden;
 }
 
@@ -111,17 +98,17 @@ label #cancel {
   left: 0;
 }
 
-#check:checked ~ label #btn {
+ #check:checked ~ label #btn {
   margin-left: 405px;
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; 
 }
 
 #check:checked ~ label #cancel {
   margin-left: 405px;
   opacity: 1;
   visibility: visible;
-}
+}  
 
 @media(max-width : 860px) {
 

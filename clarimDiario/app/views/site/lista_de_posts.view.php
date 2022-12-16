@@ -14,8 +14,7 @@
 </head>
 
 <body>
-
-<?php include 'App/views/site/navbar.php' ?>
+    <?php include 'App/views/site/navbar.php' ?>
 
     <div class="d-flex logo">
 
@@ -127,10 +126,7 @@
                             </div>
                         </div>                   
                     </div>
-                </div>
-
-                
-
+                </div>                
             </div>
         </div>
 
