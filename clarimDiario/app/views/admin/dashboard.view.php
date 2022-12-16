@@ -60,7 +60,7 @@
                                           </div>
                                         </div>
                                         <br>
-                                    <button  type="button" class="btn logout-button btn-warning"><a href="/login/logout"><img src="../../../public/img/logoutgoogle.png" alt="Logout">Logout</a></button>
+                                    <button  type="button" class="btn logout-button btn-warning logoutbutton"><a href="/login/logout"><img src="../../../public/img/logoutgoogle.png" alt="Logout"></a></button>
                                 </div>
                           </div>
                         </div>
