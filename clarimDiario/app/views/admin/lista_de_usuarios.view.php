@@ -9,18 +9,14 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../public/css/lista_de_usuarios.css">
     <link rel="stylesheet" href="../../../public/css/forms.css">
+    <link rel="stylesheet" href="../../../public/css/navbar_footer.css">
     <script src="https://kit.fontawesome.com/6a25a8e764.js" crossorigin="anonymous"></script>
     <title>Lista de Usuários</title>
 </head>
 
 <body>
-
-<?php include 'App/views/admin/sidebar.php' ?>
-
-    <div class="d-flex logo">
-
-        <img src="../../../public/img/logo.png">
-
+    <div width=100% height=auto style="background-color: black; margin-bottom: 40px">
+        <?php include 'App/views/admin/sidebar.php' ?>
     </div>
 
     <div class="add_btn" id="botao_add" data-modal="modal_adicionar">

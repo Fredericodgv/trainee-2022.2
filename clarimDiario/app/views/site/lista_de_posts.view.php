@@ -16,14 +16,10 @@
 
 <body>
 
-<?php include 'App/views/site/navbar.php' ?>
-
-    <div class="d-flex logo">
-
-        <img src="../../../public/img/logo.png">
-
+    <div class="auxnb">
+    <?php include 'App/views/site/navbar.php' ?>
     </div>
-
+    
     <nav class="navbar aux_nav">
         <div class="container-fluid ">
             <form action = "lista_de_posts" method = "post" class="d-flex aux_container" role="search">
