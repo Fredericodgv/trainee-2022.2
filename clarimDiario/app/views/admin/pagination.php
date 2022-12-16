@@ -1,4 +1,4 @@
-<nav aria-label="Page navigation example">
+<nav aria-label="Page navigation example" style="background-color: black;">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link page-box" href="lista_de_usuarios?page=<?php if ($page > 1) { $page = $page - 1; echo $page; } else { echo $page; } ?>" aria-label="Previous">
