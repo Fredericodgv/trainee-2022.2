@@ -20,7 +20,7 @@
     <?php include 'App/views/site/navbar.php' ?>
     </div>
     
-    <nav class="navbar aux_nav">
+    <div class="navbar aux_nav">
         <div class="container-fluid ">
             <form action = "lista_de_posts" method = "post" class="d-flex aux_container" role="search">
                     <input class="form-control me-2 aux_form" type="text" name = "key" placeholder="Nome do post..."
@@ -28,7 +28,7 @@
                     <button class="btn btn-primary aux_btn_nav" type="submit" value="Submit" id="" name="submit">Procurar</button>
             </form>
         </div>
-    </nav>
+</div>
 
     <div class="identidade-lista-de-posts">
     

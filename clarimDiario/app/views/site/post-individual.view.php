@@ -11,8 +11,6 @@
 </head>
 <body>
 
-<?php include 'App/views/site/navbar.php' ?>
-
     <div class="cabecalho">
         <a href="#"><img src="assets/logoCompleta.png" alt=""></a>
     </div>
@@ -42,8 +40,6 @@
                 </div>
             </div>
         </div>
-
-        <?php include 'App/views/site/footer.php' ?>
 
 </body>
 </html>

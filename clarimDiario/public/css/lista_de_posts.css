@@ -10,7 +10,17 @@
     margin-bottom: 30px;
 }
 
+.teste {
+    display: flex;
+    flex-direction: row;
 
+    justify-content: space-around;
+    
+}
+
+.teste li {
+    margin-left: 20px;
+}
 
 .logo{
     justify-content: center;
